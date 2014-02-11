@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  KPStandViewCell.h
 //  Journal
 //
 //  Created by Виктор Шаманов on 2/11/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface KPStandViewCell : UICollectionViewCell
+
+@property (strong, nonatomic) UIImageView *imageView;
 
 @end

@@ -15,13 +15,17 @@
 		E661506718AA862300D37984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E661506618AA862300D37984 /* AppDelegate.m */; };
 		E661506A18AA862300D37984 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506818AA862300D37984 /* Main_iPhone.storyboard */; };
 		E661506D18AA862300D37984 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506B18AA862300D37984 /* Main_iPad.storyboard */; };
-		E661507018AA862300D37984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E661506F18AA862300D37984 /* ViewController.m */; };
 		E661507218AA862300D37984 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E661507118AA862300D37984 /* Images.xcassets */; };
 		E661507918AA862300D37984 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661507818AA862300D37984 /* XCTest.framework */; };
 		E661507A18AA862300D37984 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505618AA862300D37984 /* Foundation.framework */; };
 		E661507B18AA862300D37984 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505A18AA862300D37984 /* UIKit.framework */; };
 		E661508318AA862300D37984 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E661508118AA862300D37984 /* InfoPlist.strings */; };
 		E661508518AA862300D37984 /* JournalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E661508418AA862300D37984 /* JournalTests.m */; };
+		E661509518AA8A7300D37984 /* KPStandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E661509418AA8A7300D37984 /* KPStandViewController.m */; };
+		E661509A18AA9D3600D37984 /* KPStandViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E661509918AA9D3500D37984 /* KPStandViewCell.m */; };
+		E661509E18AA9E7600D37984 /* Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* Journal.xcdatamodeld */; };
+		E66150A118AAA6EE00D37984 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = E66150A018AAA6EE00D37984 /* Journal.m */; };
+		E66150A318AAAF8100D37984 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66150A218AAAF8100D37984 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +51,20 @@
 		E661506618AA862300D37984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E661506918AA862300D37984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		E661506C18AA862300D37984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		E661506E18AA862300D37984 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E661506F18AA862300D37984 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E661507118AA862300D37984 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E661507718AA862300D37984 /* JournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E661507818AA862300D37984 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E661508018AA862300D37984 /* JournalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JournalTests-Info.plist"; sourceTree = "<group>"; };
 		E661508218AA862300D37984 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E661508418AA862300D37984 /* JournalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JournalTests.m; sourceTree = "<group>"; };
+		E661509318AA8A7300D37984 /* KPStandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStandViewController.h; sourceTree = "<group>"; };
+		E661509418AA8A7300D37984 /* KPStandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStandViewController.m; sourceTree = "<group>"; };
+		E661509818AA9D3500D37984 /* KPStandViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStandViewCell.h; sourceTree = "<group>"; };
+		E661509918AA9D3500D37984 /* KPStandViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStandViewCell.m; sourceTree = "<group>"; };
+		E661509D18AA9E7600D37984 /* Journal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Journal.xcdatamodel; sourceTree = "<group>"; };
+		E661509F18AAA6EE00D37984 /* Journal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journal.h; sourceTree = "<group>"; };
+		E66150A018AAA6EE00D37984 /* Journal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Journal.m; sourceTree = "<group>"; };
+		E66150A218AAAF8100D37984 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66150A318AAAF8100D37984 /* CoreData.framework in Frameworks */,
 				E661505918AA862300D37984 /* CoreGraphics.framework in Frameworks */,
 				E661505B18AA862300D37984 /* UIKit.framework in Frameworks */,
 				E661505718AA862300D37984 /* Foundation.framework in Frameworks */,
@@ -103,6 +114,7 @@
 		E661505518AA862300D37984 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E66150A218AAAF8100D37984 /* CoreData.framework */,
 				E661505618AA862300D37984 /* Foundation.framework */,
 				E661505818AA862300D37984 /* CoreGraphics.framework */,
 				E661505A18AA862300D37984 /* UIKit.framework */,
@@ -116,11 +128,13 @@
 			children = (
 				E661506518AA862300D37984 /* AppDelegate.h */,
 				E661506618AA862300D37984 /* AppDelegate.m */,
+				E661509618AA9C9000D37984 /* Stand */,
+				E661509718AA9C9F00D37984 /* Cells */,
+				E661509B18AA9E5600D37984 /* CoreData Entities */,
 				E661506818AA862300D37984 /* Main_iPhone.storyboard */,
 				E661506B18AA862300D37984 /* Main_iPad.storyboard */,
-				E661506E18AA862300D37984 /* ViewController.h */,
-				E661506F18AA862300D37984 /* ViewController.m */,
 				E661507118AA862300D37984 /* Images.xcassets */,
+				E661509C18AA9E7600D37984 /* Journal.xcdatamodeld */,
 				E661505D18AA862300D37984 /* Supporting Files */,
 			);
 			path = Journal;
@@ -153,6 +167,33 @@
 				E661508118AA862300D37984 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E661509618AA9C9000D37984 /* Stand */ = {
+			isa = PBXGroup;
+			children = (
+				E661509318AA8A7300D37984 /* KPStandViewController.h */,
+				E661509418AA8A7300D37984 /* KPStandViewController.m */,
+			);
+			name = Stand;
+			sourceTree = "<group>";
+		};
+		E661509718AA9C9F00D37984 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E661509818AA9D3500D37984 /* KPStandViewCell.h */,
+				E661509918AA9D3500D37984 /* KPStandViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E661509B18AA9E5600D37984 /* CoreData Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E661509F18AAA6EE00D37984 /* Journal.h */,
+				E66150A018AAA6EE00D37984 /* Journal.m */,
+			);
+			name = "CoreData Entities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E661507018AA862300D37984 /* ViewController.m in Sources */,
+				E661509A18AA9D3600D37984 /* KPStandViewCell.m in Sources */,
+				E66150A118AAA6EE00D37984 /* Journal.m in Sources */,
+				E661509E18AA9E7600D37984 /* Journal.xcdatamodeld in Sources */,
 				E661506718AA862300D37984 /* AppDelegate.m in Sources */,
+				E661509518AA8A7300D37984 /* KPStandViewController.m in Sources */,
 				E661506318AA862300D37984 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +518,7 @@
 				E661508A18AA862300D37984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E661508B18AA862300D37984 /* Build configuration list for PBXNativeTarget "JournalTests" */ = {
 			isa = XCConfigurationList;
@@ -482,8 +527,22 @@
 				E661508D18AA862300D37984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E661509C18AA9E7600D37984 /* Journal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E661509D18AA9E7600D37984 /* Journal.xcdatamodel */,
+			);
+			currentVersion = E661509D18AA9E7600D37984 /* Journal.xcdatamodel */;
+			path = Journal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E661504B18AA862300D37984 /* Project object */;
 }
