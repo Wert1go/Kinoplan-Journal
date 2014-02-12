@@ -9,8 +9,8 @@
 #import "Journal+ImagePreview.h"
 #import "CGPDFDocument.h"
 
-static CGFloat const kDefaultWidth  = 300.0;
-static CGFloat const kDefaultHeight = 400.0;
+static CGFloat const kDefaultWidth  = 600.0;
+static CGFloat const kDefaultHeight = 800.0;
 
 @implementation Journal (ImagePreview)
 
