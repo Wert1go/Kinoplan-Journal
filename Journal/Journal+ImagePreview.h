@@ -12,8 +12,6 @@
 
 - (UIImage *)previewImage;
 
-- (UIImage *)previewImagewithSize:(CGSize)imageSize;
-
-- (UIImage *)previewImagewithSize:(CGSize)imageSize scale:(CGFloat)scale;
+- (UIImage *)previewImageWithSize:(CGSize)imageSize;
 
 @end

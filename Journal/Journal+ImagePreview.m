@@ -9,46 +9,40 @@
 #import "Journal+ImagePreview.h"
 #import "CGPDFDocument.h"
 
-static CGFloat const kDefaultScale  = 1.0;
-static CGFloat const kDefaultWidth  = 240.0;
-static CGFloat const kDefaultHeight = 320.0;
+static CGFloat const kDefaultWidth  = 300.0;
+static CGFloat const kDefaultHeight = 400.0;
 
 @implementation Journal (ImagePreview)
 
 - (UIImage *)previewImage {
-    return [self previewImagewithSize:CGSizeMake(kDefaultWidth, kDefaultHeight)];
+    return [self previewImageWithSize:CGSizeMake(kDefaultWidth, kDefaultHeight)];
 }
 
-- (UIImage *)previewImagewithSize:(CGSize)imageSize {
-    return [self previewImagewithSize:imageSize scale:kDefaultScale];
-}
-
-- (UIImage *)previewImagewithSize:(CGSize)imageSize scale:(CGFloat)scale {
-    
+- (UIImage *)previewImageWithSize:(CGSize)imageSize {
     NSInteger page = 1;
-    
+
     CGImageRef imageRef = NULL;
     NSURL *fileURL = [NSURL fileURLWithPath:self.filePath];
-    
+
     CGPDFDocumentRef thePDFDocRef = CGPDFDocumentCreateX((__bridge CFURLRef)fileURL, nil);
-    
+
     if (thePDFDocRef != NULL) // Check for non-NULL CGPDFDocumentRef
     {
         CGPDFPageRef thePDFPageRef = CGPDFDocumentGetPage(thePDFDocRef, page);
-        
+
         if (thePDFPageRef != NULL) // Check for non-NULL CGPDFPageRef
         {
             CGFloat thumb_w = imageSize.width; // Maximum thumb width
             CGFloat thumb_h = imageSize.height; // Maximum thumb height
-            
+
             CGRect cropBoxRect = CGPDFPageGetBoxRect(thePDFPageRef, kCGPDFCropBox);
             CGRect mediaBoxRect = CGPDFPageGetBoxRect(thePDFPageRef, kCGPDFMediaBox);
             CGRect effectiveRect = CGRectIntersection(cropBoxRect, mediaBoxRect);
-            
+
             NSInteger pageRotate = CGPDFPageGetRotationAngle(thePDFPageRef); // Angle
-            
+
             CGFloat page_w = 0.0f; CGFloat page_h = 0.0f; // Rotated page size
-            
+
             switch (pageRotate) // Page rotation (in degrees)
             {
                 default: // Default case
@@ -58,7 +52,7 @@ static CGFloat const kDefaultHeight = 320.0;
                     page_h = effectiveRect.size.height;
                     break;
                 }
-                    
+
                 case 90: case 270: // 90 and 270 degrees
                 {
                     page_h = effectiveRect.size.width;
@@ -66,60 +60,60 @@ static CGFloat const kDefaultHeight = 320.0;
                     break;
                 }
             }
-            
+
             CGFloat scale_w = (thumb_w / page_w); // Width scale
             CGFloat scale_h = (thumb_h / page_h); // Height scale
-            
+
             CGFloat scale = 0.0f; // Page to target thumb size scale
-            
+
             if (page_h > page_w)
                 scale = ((thumb_h > thumb_w) ? scale_w : scale_h); // Portrait
             else
                 scale = ((thumb_h < thumb_w) ? scale_h : scale_w); // Landscape
-            
+
             NSInteger target_w = (page_w * scale); // Integer target thumb width
             NSInteger target_h = (page_h * scale); // Integer target thumb height
-            
+
             if (target_w % 2) target_w--; if (target_h % 2) target_h--; // Even
-            
+
             target_w *= scale;
             target_h *= scale; // Screen scale
-            
+
             CGColorSpaceRef rgb = CGColorSpaceCreateDeviceRGB(); // RGB color space
-            
+
             CGBitmapInfo bmi = (kCGBitmapByteOrder32Little | kCGImageAlphaNoneSkipFirst);
-            
+
             CGContextRef context = CGBitmapContextCreate(NULL, target_w, target_h, 8, 0, rgb, bmi);
-            
+
             if (context != NULL) // Must have a valid custom CGBitmap context to draw into
             {
                 CGRect thumbRect = CGRectMake(0.0f, 0.0f, target_w, target_h); // Target thumb rect
-                
+
                 CGContextSetRGBFillColor(context, 1.0f, 1.0f, 1.0f, 1.0f); CGContextFillRect(context, thumbRect); // White fill
-                
+
                 CGContextConcatCTM(context, CGPDFPageGetDrawingTransform(thePDFPageRef, kCGPDFCropBox, thumbRect, 0, true)); // Fit rect
-                
+
                 //CGContextSetRenderingIntent(context, kCGRenderingIntentDefault); CGContextSetInterpolationQuality(context, kCGInterpolationDefault);
-                
+
                 CGContextDrawPDFPage(context, thePDFPageRef); // Render the PDF page into the custom CGBitmap context
-                
+
                 imageRef = CGBitmapContextCreateImage(context); // Create CGImage from custom CGBitmap context
-                
+
                 CGContextRelease(context); // Release custom CGBitmap context reference
             }
-            
+
             CGColorSpaceRelease(rgb); // Release device RGB color space reference
         }
-        
+
         CGPDFDocumentRelease(thePDFDocRef); // Release CGPDFDocumentRef reference
     }
-    
+
     if (imageRef != NULL) // Create UIImage from CGImage and show it, then save thumb as PNG
     {
-        UIImage *image = [UIImage imageWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp];
-        
+        UIImage *image = [UIImage imageWithCGImage:imageRef scale:0.0 orientation:UIImageOrientationUp];
+
         return image;
-        
+
         //        [[ReaderThumbCache sharedInstance] setObject:image forKey:request.cacheKey]; // Update cache
         //
         //        if (self.isCancelled == NO) // Show the image in the target thumb view on the main thread
@@ -153,7 +147,7 @@ static CGFloat const kDefaultHeight = 320.0;
     {
         //        [[ReaderThumbCache sharedInstance] removeNullForKey:request.cacheKey];
     }
-    
+
     //    request.thumbView.operation = nil; // Break retain loop
     return nil;
 }
