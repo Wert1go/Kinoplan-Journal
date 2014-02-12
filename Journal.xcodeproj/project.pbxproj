@@ -18,6 +18,7 @@
 		D10DE5261BD1E374E2936C82 /* AppIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DECE4DFA1C6922E033E24 /* AppIcon-114.png */; };
 		D10DE56E86D6C079738C78AF /* Reader-Mark-N.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE12D6459947153F8DE34 /* Reader-Mark-N.png */; };
 		D10DE5B1C0C7DD8E401CB10E /* AppIcon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DEFA43540E6B0464C5150 /* AppIcon-144.png */; };
+		D10DE67BDDD60E2A9F1D6B16 /* UIImage+Caching.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DE74C1A61E2FF78F549CB /* UIImage+Caching.m */; };
 		D10DEA2C94859F87A0759E11 /* Reader-Email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE5FD12047C715D78E379 /* Reader-Email@2x.png */; };
 		D10DEA6AD78B41ED2EC36EA5 /* AppIcon-072.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DECA4C5E75E029E62A148 /* AppIcon-072.png */; };
 		D10DEA730099FBAE4E3D1991 /* Reader-Mark-Y.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE2D386BAE3B4905E80C1 /* Reader-Mark-Y.png */; };
@@ -85,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		D10DE12D6459947153F8DE34 /* Reader-Mark-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-N.png"; sourceTree = "<group>"; };
+		D10DE1E0AB59B3796861BE9C /* UIImage+Caching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Caching.h"; sourceTree = "<group>"; };
 		D10DE290ECC8EB073D2CB180 /* Reader-Button-N@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-N@2x.png"; sourceTree = "<group>"; };
 		D10DE2D386BAE3B4905E80C1 /* Reader-Mark-Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-Y.png"; sourceTree = "<group>"; };
 		D10DE35E3255880472A179C2 /* Reader-Print@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Print@2x.png"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		D10DE5E53903C68491517080 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D10DE5FD12047C715D78E379 /* Reader-Email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Email@2x.png"; sourceTree = "<group>"; };
 		D10DE68BFD4E239BFEDA439A /* Reader-Mark-Y@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-Y@2x.png"; sourceTree = "<group>"; };
+		D10DE74C1A61E2FF78F549CB /* UIImage+Caching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Caching.m"; sourceTree = "<group>"; };
 		D10DE96074BDBE1A7E9C7D95 /* Reader-Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Email.png"; sourceTree = "<group>"; };
 		D10DE9E5DA723A794560C012 /* AppIcon-057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-057.png"; sourceTree = "<group>"; };
 		D10DE9F178BDCE9A6E55DCA1 /* Reader-Mark-N@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-N@2x.png"; sourceTree = "<group>"; };
@@ -399,6 +402,8 @@
 			children = (
 				E6C447D718AB59DB003B5F5E /* Journal+ImagePreview.h */,
 				E6C447D818AB59DB003B5F5E /* Journal+ImagePreview.m */,
+				D10DE1E0AB59B3796861BE9C /* UIImage+Caching.h */,
+				D10DE74C1A61E2FF78F549CB /* UIImage+Caching.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				E6C447C918AAC877003B5F5E /* ReaderThumbRender.m in Sources */,
 				E6C447C518AAC877003B5F5E /* ReaderMainToolbar.m in Sources */,
 				E661506318AA862300D37984 /* main.m in Sources */,
+				D10DE67BDDD60E2A9F1D6B16 /* UIImage+Caching.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

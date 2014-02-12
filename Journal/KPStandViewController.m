@@ -14,6 +14,7 @@
 #import "Journal.h"
 
 #import "Journal+ImagePreview.h"
+#import "UIImage+Caching.h"
 
 @interface KPStandViewController () <ReaderViewControllerDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -47,6 +48,13 @@
     [self updateJournals];
 }
 
+- (void)didReceiveMemoryWarning {
+
+    [UIImage emptyCache];
+
+    [super didReceiveMemoryWarning];
+}
+
 #pragma mark - Collection view data source
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -63,7 +71,7 @@
     Journal *journal = self.journals[indexPath.row];
 
     cell.imageView.image = journal.previewImage;
-    
+
     return cell;
 }
 
