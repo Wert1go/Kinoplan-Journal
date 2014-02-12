@@ -72,7 +72,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     Journal *journal = self.journals[indexPath.row];
 
-    ReaderDocument *document = [[ReaderDocument alloc] initWithFilePath:journal.filePath password:nil];
+    ReaderDocument *document = [ReaderDocument withDocumentFilePath:journal.filePath password:nil];
 
     ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document];
     readerViewController.delegate = self;
