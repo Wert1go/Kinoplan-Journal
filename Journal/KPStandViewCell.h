@@ -10,6 +10,6 @@
 
 @interface KPStandViewCell : UICollectionViewCell
 
-@property (strong, nonatomic) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

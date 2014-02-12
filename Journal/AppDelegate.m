@@ -6,10 +6,18 @@
 //  Copyright (c) 2014 Applifto. All rights reserved.
 //
 
-#import <CoreData/CoreData.h>
+@import CoreData;
 #import "AppDelegate.h"
 
 #import "KPStandViewController.h"
+
+#define PRESENTATION_MODE FALSE
+
+#if PRESENTATION_MODE
+
+#import "Journal.h"
+
+#endif
 
 @implementation AppDelegate
 
@@ -21,6 +29,52 @@
     KPStandViewController *standViewController = (KPStandViewController *)navigationController.topViewController;
 
     standViewController.managedObjectContext = self.managedObjectContext;
+
+#if PRESENTATION_MODE
+
+    NSData *firstPDF = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"journal0" withExtension:@"pdf"]];
+
+    Journal *firstJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Journal class])
+                                                          inManagedObjectContext:self.managedObjectContext];
+
+    firstJournal.title = @"First_journal";
+    firstJournal.journalID = @1;
+    firstJournal.sortID = @1;
+    firstJournal.publicationDate = [NSDate date];
+
+    NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentPath = [searchPaths objectAtIndex:0];
+
+    NSString *firstJournalFilePath = [NSString stringWithFormat:@"%@/%@.pdf", documentPath, firstJournal.title];
+    firstJournal.filePath = firstJournalFilePath;
+
+    [[NSFileManager defaultManager] createFileAtPath:firstJournalFilePath
+                                            contents:firstPDF
+                                          attributes:nil];
+
+
+
+    NSData *secondPDF = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"journal1" withExtension:@"pdf"]];
+
+    Journal *secondJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Journal class])
+                                                          inManagedObjectContext:self.managedObjectContext];
+
+    secondJournal.title = @"Second_journal";
+    secondJournal.journalID = @2;
+    secondJournal.sortID = @3;
+    secondJournal.publicationDate = [NSDate date];
+
+    NSString *secondJournalFilePath = [NSString stringWithFormat:@"%@/%@.pdf", documentPath, secondJournal.title];
+    secondJournal.filePath = secondJournalFilePath;
+
+    [[NSFileManager defaultManager] createFileAtPath:secondJournalFilePath
+                                            contents:secondPDF
+                                          attributes:nil];
+
+
+    [self.managedObjectContext save:nil];
+
+#endif
 
     return YES;
 }

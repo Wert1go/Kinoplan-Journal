@@ -1,0 +1,3 @@
+[submodule "Reader"]
+	path = Reader
+	url = https://github.com/wiruzx/Reader.git
