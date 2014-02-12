@@ -10,13 +10,12 @@
 
 #import "KPStandViewCell.h"
 #import "ReaderViewController.h"
-#import "ReaderDocument.h"
 
 #import "Journal.h"
 
 #import "Journal+ImagePreview.h"
 
-@interface KPStandViewController () <ReaderViewControllerDelegate>
+@interface KPStandViewController () <ReaderViewControllerDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) NSArray *journals;
 
@@ -44,8 +43,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.collectionView.contentInset = UIEdgeInsetsMake(20.0, 0.0, 0.0, 0.0);
 
     [self updateJournals];
 }
@@ -82,6 +79,14 @@
 
     [self presentViewController:readerViewController animated:YES completion:nil];
 
+}
+
+#pragma mark - Collection view flow layout delegate
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+                        layout:(UICollectionViewLayout *)collectionViewLayout
+        insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0);
 }
 
 #pragma mark - ReaderViewControllerDelegate
