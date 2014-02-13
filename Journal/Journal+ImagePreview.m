@@ -9,7 +9,7 @@
 #import "Journal+ImagePreview.h"
 #import "CGPDFDocument.h"
 
-#import "UIImage+Caching.h"
+#import "SYCache.h"
 
 static CGFloat const kDefaultWidth  = 600.0;
 static CGFloat const kDefaultHeight = 800.0;
@@ -22,9 +22,13 @@ static CGFloat const kDefaultHeight = 800.0;
 
 - (UIImage *)previewImageWithSize:(CGSize)imageSize {
 
-    // caching in memory with key: filepath+width+height
-    return [UIImage cachedImageNamed:[NSString stringWithFormat:@"%@%f%f", self.filePath, imageSize.width, imageSize.height]
-                           firstLoad:^UIImage * {
+    NSString *key = [NSString stringWithFormat:@"%@%d%d", self.filePath, imageSize.width, imageSize.height];
+
+    SYCache *cache = [SYCache sharedCache];
+
+    if ([cache objectExistsForKey:key]) {
+        return [cache objectForKey:key];
+    } else {
         NSInteger page = 1;
 
         CGImageRef imageRef = NULL;
@@ -118,6 +122,7 @@ static CGFloat const kDefaultHeight = 800.0;
         {
             UIImage *image = [UIImage imageWithCGImage:imageRef scale:0.0 orientation:UIImageOrientationUp];
 
+            [cache setObject:image forKey:key];
             return image;
 
             //        [[ReaderThumbCache sharedInstance] setObject:image forKey:request.cacheKey]; // Update cache
@@ -156,7 +161,8 @@ static CGFloat const kDefaultHeight = 800.0;
 
         //    request.thumbView.operation = nil; // Break retain loop
         return nil;
-    }];
+    }
+
 }
 
 @end
