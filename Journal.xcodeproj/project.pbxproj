@@ -49,6 +49,76 @@
 		E661509E18AA9E7600D37984 /* Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* Journal.xcdatamodeld */; };
 		E66150A118AAA6EE00D37984 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = E66150A018AAA6EE00D37984 /* Journal.m */; };
 		E66150A318AAAF8100D37984 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66150A218AAAF8100D37984 /* CoreData.framework */; };
+		E66A0D6B18AE5EF0003FD266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505618AA862300D37984 /* Foundation.framework */; };
+		E66A0D7018AE5EF0003FD266 /* Journal_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E66A0D6F18AE5EF0003FD266 /* Journal_iOS.h */; };
+		E66A0D7218AE5EF0003FD266 /* Journal_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A0D7118AE5EF0003FD266 /* Journal_iOS.m */; };
+		E66A0D7818AE5EF0003FD266 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661507818AA862300D37984 /* XCTest.framework */; };
+		E66A0D7918AE5EF0003FD266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505618AA862300D37984 /* Foundation.framework */; };
+		E66A0D7A18AE5EF0003FD266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505A18AA862300D37984 /* UIKit.framework */; };
+		E66A0D7D18AE5EF0003FD266 /* libJournal-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A0D6A18AE5EF0003FD266 /* libJournal-iOS.a */; };
+		E66A0D8318AE5EF0003FD266 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E66A0D8118AE5EF0003FD266 /* InfoPlist.strings */; };
+		E66A0D8518AE5EF0003FD266 /* Journal_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A0D8418AE5EF0003FD266 /* Journal_iOSTests.m */; };
+		E66A0D8D18AE6003003FD266 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479618AAC877003B5F5E /* CGPDFDocument.m */; };
+		E66A0D8F18AE6003003FD266 /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479818AAC877003B5F5E /* ReaderConstants.m */; };
+		E66A0D9118AE6003003FD266 /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479A18AAC877003B5F5E /* ReaderContentPage.m */; };
+		E66A0D9318AE6003003FD266 /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479C18AAC877003B5F5E /* ReaderContentTile.m */; };
+		E66A0D9518AE6003003FD266 /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479E18AAC877003B5F5E /* ReaderContentView.m */; };
+		E66A0D9718AE6003003FD266 /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447A018AAC877003B5F5E /* ReaderDocument.m */; };
+		E66A0D9918AE6003003FD266 /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447A218AAC877003B5F5E /* ReaderDocumentOutline.m */; };
+		E66A0D9B18AE6003003FD266 /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447A418AAC877003B5F5E /* ReaderMainPagebar.m */; };
+		E66A0D9D18AE6003003FD266 /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447A618AAC877003B5F5E /* ReaderMainToolbar.m */; };
+		E66A0D9F18AE6003003FD266 /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447A818AAC877003B5F5E /* ReaderThumbCache.m */; };
+		E66A0DA118AE6003003FD266 /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447AA18AAC877003B5F5E /* ReaderThumbFetch.m */; };
+		E66A0DA318AE6003003FD266 /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447AC18AAC877003B5F5E /* ReaderThumbQueue.m */; };
+		E66A0DA518AE6003003FD266 /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447AE18AAC877003B5F5E /* ReaderThumbRender.m */; };
+		E66A0DA718AE6003003FD266 /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447B018AAC877003B5F5E /* ReaderThumbRequest.m */; };
+		E66A0DA918AE6003003FD266 /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447B218AAC877003B5F5E /* ReaderThumbsView.m */; };
+		E66A0DAB18AE6003003FD266 /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447B418AAC877003B5F5E /* ReaderThumbView.m */; };
+		E66A0DAD18AE6003003FD266 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447B618AAC877003B5F5E /* ReaderViewController.m */; };
+		E66A0DAF18AE6003003FD266 /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447B818AAC877003B5F5E /* ThumbsMainToolbar.m */; };
+		E66A0DB118AE6003003FD266 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447BA18AAC877003B5F5E /* ThumbsViewController.m */; };
+		E66A0DB318AE6003003FD266 /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447BC18AAC877003B5F5E /* UIXToolbarView.m */; };
+		E66A0DB518AE6003003FD266 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E661506618AA862300D37984 /* AppDelegate.m */; };
+		E66A0DB718AE6003003FD266 /* KPStandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E661509418AA8A7300D37984 /* KPStandViewController.m */; };
+		E66A0DB918AE6003003FD266 /* KPStandViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E661509918AA9D3500D37984 /* KPStandViewCell.m */; };
+		E66A0DBB18AE6004003FD266 /* Journal.m in Sources */ = {isa = PBXBuildFile; fileRef = E66150A018AAA6EE00D37984 /* Journal.m */; };
+		E66A0DBD18AE6004003FD266 /* Journal+ImagePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447D818AB59DB003B5F5E /* Journal+ImagePreview.m */; };
+		E66A0DBF18AE6004003FD266 /* SYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DEE97822BA326CA3E2590 /* SYCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E66A0DC018AE6058003FD266 /* CGPDFDocument.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C4479518AAC877003B5F5E /* CGPDFDocument.h */; };
+		E66A0DC118AE6058003FD266 /* ReaderConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C4479718AAC877003B5F5E /* ReaderConstants.h */; };
+		E66A0DC218AE6058003FD266 /* ReaderContentPage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C4479918AAC877003B5F5E /* ReaderContentPage.h */; };
+		E66A0DC318AE6058003FD266 /* ReaderContentTile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C4479B18AAC877003B5F5E /* ReaderContentTile.h */; };
+		E66A0DC418AE6058003FD266 /* ReaderContentView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C4479D18AAC877003B5F5E /* ReaderContentView.h */; };
+		E66A0DC518AE6058003FD266 /* ReaderDocument.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C4479F18AAC877003B5F5E /* ReaderDocument.h */; };
+		E66A0DC618AE6058003FD266 /* ReaderDocumentOutline.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447A118AAC877003B5F5E /* ReaderDocumentOutline.h */; };
+		E66A0DC718AE6058003FD266 /* ReaderMainPagebar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447A318AAC877003B5F5E /* ReaderMainPagebar.h */; };
+		E66A0DC818AE6058003FD266 /* ReaderMainToolbar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447A518AAC877003B5F5E /* ReaderMainToolbar.h */; };
+		E66A0DC918AE6058003FD266 /* ReaderThumbCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447A718AAC877003B5F5E /* ReaderThumbCache.h */; };
+		E66A0DCA18AE6058003FD266 /* ReaderThumbFetch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447A918AAC877003B5F5E /* ReaderThumbFetch.h */; };
+		E66A0DCB18AE6058003FD266 /* ReaderThumbQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447AB18AAC877003B5F5E /* ReaderThumbQueue.h */; };
+		E66A0DCC18AE6058003FD266 /* ReaderThumbRender.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447AD18AAC877003B5F5E /* ReaderThumbRender.h */; };
+		E66A0DCD18AE6058003FD266 /* ReaderThumbRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447AF18AAC877003B5F5E /* ReaderThumbRequest.h */; };
+		E66A0DCE18AE6058003FD266 /* ReaderThumbsView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447B118AAC877003B5F5E /* ReaderThumbsView.h */; };
+		E66A0DCF18AE6058003FD266 /* ReaderThumbView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447B318AAC877003B5F5E /* ReaderThumbView.h */; };
+		E66A0DD018AE6058003FD266 /* ReaderViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447B518AAC877003B5F5E /* ReaderViewController.h */; };
+		E66A0DD118AE6058003FD266 /* ThumbsMainToolbar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447B718AAC877003B5F5E /* ThumbsMainToolbar.h */; };
+		E66A0DD218AE6058003FD266 /* ThumbsViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447B918AAC877003B5F5E /* ThumbsViewController.h */; };
+		E66A0DD318AE6058003FD266 /* UIXToolbarView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447BB18AAC877003B5F5E /* UIXToolbarView.h */; };
+		E66A0DD418AE6058003FD266 /* AppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E661506518AA862300D37984 /* AppDelegate.h */; };
+		E66A0DD518AE6058003FD266 /* KPStandViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E661509318AA8A7300D37984 /* KPStandViewController.h */; };
+		E66A0DD618AE6058003FD266 /* KPStandViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E661509818AA9D3500D37984 /* KPStandViewCell.h */; };
+		E66A0DD718AE6058003FD266 /* Journal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E661509F18AAA6EE00D37984 /* Journal.h */; };
+		E66A0DD818AE6058003FD266 /* Journal+ImagePreview.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C447D718AB59DB003B5F5E /* Journal+ImagePreview.h */; };
+		E66A0DD918AE6058003FD266 /* SYCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D10DE499DAF8AB530C59605C /* SYCache.h */; };
+		E66A0DDA18AE6165003FD266 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505A18AA862300D37984 /* UIKit.framework */; };
+		E66A0DDB18AE61A9003FD266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505818AA862300D37984 /* CoreGraphics.framework */; };
+		E66A0DDC18AE61BF003FD266 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66150A218AAAF8100D37984 /* CoreData.framework */; };
+		E66A0DE518AE6360003FD266 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A0DE418AE6360003FD266 /* CoreFoundation.framework */; };
+		E66A0DEB18AE6360003FD266 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E66A0DE918AE6360003FD266 /* InfoPlist.strings */; };
+		E66A0DF018AE6390003FD266 /* Kinoplan-Journal_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506818AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard */; };
+		E66A0DF118AE6396003FD266 /* Kinoplan-Journal_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506B18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard */; };
+		E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D118AACB81003B5F5E /* journal0.pdf */; };
+		E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D218AACB81003B5F5E /* journal1.pdf */; };
 		E6C447BD18AAC877003B5F5E /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479618AAC877003B5F5E /* CGPDFDocument.m */; };
 		E6C447BE18AAC877003B5F5E /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479818AAC877003B5F5E /* ReaderConstants.m */; };
 		E6C447BF18AAC877003B5F5E /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479A18AAC877003B5F5E /* ReaderContentPage.m */; };
@@ -82,7 +152,53 @@
 			remoteGlobalIDString = E661505218AA862300D37984;
 			remoteInfo = Journal;
 		};
+		E66A0D7B18AE5EF0003FD266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E661504B18AA862300D37984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E66A0D6918AE5EF0003FD266;
+			remoteInfo = "Journal-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E66A0D6818AE5EF0003FD266 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E66A0DC018AE6058003FD266 /* CGPDFDocument.h in CopyFiles */,
+				E66A0DC118AE6058003FD266 /* ReaderConstants.h in CopyFiles */,
+				E66A0DC218AE6058003FD266 /* ReaderContentPage.h in CopyFiles */,
+				E66A0DC318AE6058003FD266 /* ReaderContentTile.h in CopyFiles */,
+				E66A0DC418AE6058003FD266 /* ReaderContentView.h in CopyFiles */,
+				E66A0DC518AE6058003FD266 /* ReaderDocument.h in CopyFiles */,
+				E66A0DC618AE6058003FD266 /* ReaderDocumentOutline.h in CopyFiles */,
+				E66A0DC718AE6058003FD266 /* ReaderMainPagebar.h in CopyFiles */,
+				E66A0DC818AE6058003FD266 /* ReaderMainToolbar.h in CopyFiles */,
+				E66A0DC918AE6058003FD266 /* ReaderThumbCache.h in CopyFiles */,
+				E66A0DCA18AE6058003FD266 /* ReaderThumbFetch.h in CopyFiles */,
+				E66A0DCB18AE6058003FD266 /* ReaderThumbQueue.h in CopyFiles */,
+				E66A0DCC18AE6058003FD266 /* ReaderThumbRender.h in CopyFiles */,
+				E66A0DCD18AE6058003FD266 /* ReaderThumbRequest.h in CopyFiles */,
+				E66A0DCE18AE6058003FD266 /* ReaderThumbsView.h in CopyFiles */,
+				E66A0DCF18AE6058003FD266 /* ReaderThumbView.h in CopyFiles */,
+				E66A0DD018AE6058003FD266 /* ReaderViewController.h in CopyFiles */,
+				E66A0DD118AE6058003FD266 /* ThumbsMainToolbar.h in CopyFiles */,
+				E66A0DD218AE6058003FD266 /* ThumbsViewController.h in CopyFiles */,
+				E66A0DD318AE6058003FD266 /* UIXToolbarView.h in CopyFiles */,
+				E66A0DD418AE6058003FD266 /* AppDelegate.h in CopyFiles */,
+				E66A0DD518AE6058003FD266 /* KPStandViewController.h in CopyFiles */,
+				E66A0DD618AE6058003FD266 /* KPStandViewCell.h in CopyFiles */,
+				E66A0DD718AE6058003FD266 /* Journal.h in CopyFiles */,
+				E66A0DD818AE6058003FD266 /* Journal+ImagePreview.h in CopyFiles */,
+				E66A0DD918AE6058003FD266 /* SYCache.h in CopyFiles */,
+				E66A0D7018AE5EF0003FD266 /* Journal_iOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D10DE12D6459947153F8DE34 /* Reader-Mark-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-N.png"; sourceTree = "<group>"; };
@@ -135,6 +251,19 @@
 		E661509F18AAA6EE00D37984 /* Journal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Journal.h; sourceTree = "<group>"; };
 		E66150A018AAA6EE00D37984 /* Journal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Journal.m; sourceTree = "<group>"; };
 		E66150A218AAAF8100D37984 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E66A0D6A18AE5EF0003FD266 /* libJournal-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libJournal-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66A0D6E18AE5EF0003FD266 /* Journal-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Journal-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		E66A0D6F18AE5EF0003FD266 /* Journal_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Journal_iOS.h; sourceTree = "<group>"; };
+		E66A0D7118AE5EF0003FD266 /* Journal_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Journal_iOS.m; sourceTree = "<group>"; };
+		E66A0D7718AE5EF0003FD266 /* Journal-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Journal-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66A0D8018AE5EF0003FD266 /* Journal-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Journal-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		E66A0D8218AE5EF0003FD266 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E66A0D8418AE5EF0003FD266 /* Journal_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Journal_iOSTests.m; sourceTree = "<group>"; };
+		E66A0DE318AE6360003FD266 /* Journal-iOS-resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Journal-iOS-resources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66A0DE418AE6360003FD266 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E66A0DE818AE6360003FD266 /* Journal-iOS-resources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Journal-iOS-resources-Info.plist"; sourceTree = "<group>"; };
+		E66A0DEA18AE6360003FD266 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E66A0DEC18AE6360003FD266 /* Journal-iOS-resources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Journal-iOS-resources-Prefix.pch"; sourceTree = "<group>"; };
 		E6C4479518AAC877003B5F5E /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPDFDocument.h; sourceTree = "<group>"; };
 		E6C4479618AAC877003B5F5E /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPDFDocument.m; sourceTree = "<group>"; };
 		E6C4479718AAC877003B5F5E /* ReaderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderConstants.h; sourceTree = "<group>"; };
@@ -205,6 +334,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E66A0D6718AE5EF0003FD266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A0DDC18AE61BF003FD266 /* CoreData.framework in Frameworks */,
+				E66A0DDB18AE61A9003FD266 /* CoreGraphics.framework in Frameworks */,
+				E66A0DDA18AE6165003FD266 /* UIKit.framework in Frameworks */,
+				E66A0D6B18AE5EF0003FD266 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66A0D7418AE5EF0003FD266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A0D7818AE5EF0003FD266 /* XCTest.framework in Frameworks */,
+				E66A0D7D18AE5EF0003FD266 /* libJournal-iOS.a in Frameworks */,
+				E66A0D7A18AE5EF0003FD266 /* UIKit.framework in Frameworks */,
+				E66A0D7918AE5EF0003FD266 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66A0DE018AE6360003FD266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A0DE518AE6360003FD266 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -255,6 +414,9 @@
 				E6C4479418AAC877003B5F5E /* Reader */,
 				E661505C18AA862300D37984 /* Journal */,
 				E661507E18AA862300D37984 /* JournalTests */,
+				E66A0D6C18AE5EF0003FD266 /* Journal-iOS */,
+				E66A0D7E18AE5EF0003FD266 /* Journal-iOSTests */,
+				E66A0DE618AE6360003FD266 /* Journal-iOS-resources */,
 				E661505518AA862300D37984 /* Frameworks */,
 				E661505418AA862300D37984 /* Products */,
 			);
@@ -265,6 +427,9 @@
 			children = (
 				E661505318AA862300D37984 /* Journal.app */,
 				E661507718AA862300D37984 /* JournalTests.xctest */,
+				E66A0D6A18AE5EF0003FD266 /* libJournal-iOS.a */,
+				E66A0D7718AE5EF0003FD266 /* Journal-iOSTests.xctest */,
+				E66A0DE318AE6360003FD266 /* Journal-iOS-resources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,6 +442,7 @@
 				E661505818AA862300D37984 /* CoreGraphics.framework */,
 				E661505A18AA862300D37984 /* UIKit.framework */,
 				E661507818AA862300D37984 /* XCTest.framework */,
+				E66A0DE418AE6360003FD266 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -356,6 +522,60 @@
 				E66150A018AAA6EE00D37984 /* Journal.m */,
 			);
 			name = "CoreData Entities";
+			sourceTree = "<group>";
+		};
+		E66A0D6C18AE5EF0003FD266 /* Journal-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E66A0D6F18AE5EF0003FD266 /* Journal_iOS.h */,
+				E66A0D7118AE5EF0003FD266 /* Journal_iOS.m */,
+				E66A0D6D18AE5EF0003FD266 /* Supporting Files */,
+			);
+			path = "Journal-iOS";
+			sourceTree = "<group>";
+		};
+		E66A0D6D18AE5EF0003FD266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E66A0D6E18AE5EF0003FD266 /* Journal-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E66A0D7E18AE5EF0003FD266 /* Journal-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				E66A0D8418AE5EF0003FD266 /* Journal_iOSTests.m */,
+				E66A0D7F18AE5EF0003FD266 /* Supporting Files */,
+			);
+			path = "Journal-iOSTests";
+			sourceTree = "<group>";
+		};
+		E66A0D7F18AE5EF0003FD266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E66A0D8018AE5EF0003FD266 /* Journal-iOSTests-Info.plist */,
+				E66A0D8118AE5EF0003FD266 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E66A0DE618AE6360003FD266 /* Journal-iOS-resources */ = {
+			isa = PBXGroup;
+			children = (
+				E66A0DE718AE6360003FD266 /* Supporting Files */,
+			);
+			path = "Journal-iOS-resources";
+			sourceTree = "<group>";
+		};
+		E66A0DE718AE6360003FD266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E66A0DE818AE6360003FD266 /* Journal-iOS-resources-Info.plist */,
+				E66A0DE918AE6360003FD266 /* InfoPlist.strings */,
+				E66A0DEC18AE6360003FD266 /* Journal-iOS-resources-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E6C4479418AAC877003B5F5E /* Reader */ = {
@@ -454,6 +674,58 @@
 			productReference = E661507718AA862300D37984 /* JournalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E66A0D6918AE5EF0003FD266 /* Journal-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E66A0D8A18AE5EF0003FD266 /* Build configuration list for PBXNativeTarget "Journal-iOS" */;
+			buildPhases = (
+				E66A0D6618AE5EF0003FD266 /* Sources */,
+				E66A0D6718AE5EF0003FD266 /* Frameworks */,
+				E66A0D6818AE5EF0003FD266 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Journal-iOS";
+			productName = "Journal-iOS";
+			productReference = E66A0D6A18AE5EF0003FD266 /* libJournal-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E66A0D7618AE5EF0003FD266 /* Journal-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E66A0D8B18AE5EF0003FD266 /* Build configuration list for PBXNativeTarget "Journal-iOSTests" */;
+			buildPhases = (
+				E66A0D7318AE5EF0003FD266 /* Sources */,
+				E66A0D7418AE5EF0003FD266 /* Frameworks */,
+				E66A0D7518AE5EF0003FD266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E66A0D7C18AE5EF0003FD266 /* PBXTargetDependency */,
+			);
+			name = "Journal-iOSTests";
+			productName = "Journal-iOSTests";
+			productReference = E66A0D7718AE5EF0003FD266 /* Journal-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E66A0DE218AE6360003FD266 /* Journal-iOS-resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E66A0DED18AE6361003FD266 /* Build configuration list for PBXNativeTarget "Journal-iOS-resources" */;
+			buildPhases = (
+				E66A0DDF18AE6360003FD266 /* Sources */,
+				E66A0DE018AE6360003FD266 /* Frameworks */,
+				E66A0DE118AE6360003FD266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Journal-iOS-resources";
+			productName = "Journal-iOS-resources";
+			productReference = E66A0DE318AE6360003FD266 /* Journal-iOS-resources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -467,6 +739,9 @@
 						DevelopmentTeam = 4X27QXT278;
 					};
 					E661507618AA862300D37984 = {
+						TestTargetID = E661505218AA862300D37984;
+					};
+					E66A0D7618AE5EF0003FD266 = {
 						TestTargetID = E661505218AA862300D37984;
 					};
 				};
@@ -486,6 +761,9 @@
 			targets = (
 				E661505218AA862300D37984 /* Journal */,
 				E661507618AA862300D37984 /* JournalTests */,
+				E66A0D6918AE5EF0003FD266 /* Journal-iOS */,
+				E66A0D7618AE5EF0003FD266 /* Journal-iOSTests */,
+				E66A0DE218AE6360003FD266 /* Journal-iOS-resources */,
 			);
 		};
 /* End PBXProject section */
@@ -531,6 +809,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E661508318AA862300D37984 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66A0D7518AE5EF0003FD266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A0D8318AE5EF0003FD266 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66A0DE118AE6360003FD266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A0DF118AE6396003FD266 /* Kinoplan-Journal_iPad.storyboard in Resources */,
+				E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */,
+				E66A0DEB18AE6360003FD266 /* InfoPlist.strings in Resources */,
+				E66A0DF018AE6390003FD266 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
+				E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +878,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E66A0D6618AE5EF0003FD266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A0D8D18AE6003003FD266 /* CGPDFDocument.m in Sources */,
+				E66A0D8F18AE6003003FD266 /* ReaderConstants.m in Sources */,
+				E66A0D9118AE6003003FD266 /* ReaderContentPage.m in Sources */,
+				E66A0D9318AE6003003FD266 /* ReaderContentTile.m in Sources */,
+				E66A0D9518AE6003003FD266 /* ReaderContentView.m in Sources */,
+				E66A0D9718AE6003003FD266 /* ReaderDocument.m in Sources */,
+				E66A0D9918AE6003003FD266 /* ReaderDocumentOutline.m in Sources */,
+				E66A0D9B18AE6003003FD266 /* ReaderMainPagebar.m in Sources */,
+				E66A0D9D18AE6003003FD266 /* ReaderMainToolbar.m in Sources */,
+				E66A0D9F18AE6003003FD266 /* ReaderThumbCache.m in Sources */,
+				E66A0DA118AE6003003FD266 /* ReaderThumbFetch.m in Sources */,
+				E66A0DA318AE6003003FD266 /* ReaderThumbQueue.m in Sources */,
+				E66A0DA518AE6003003FD266 /* ReaderThumbRender.m in Sources */,
+				E66A0DA718AE6003003FD266 /* ReaderThumbRequest.m in Sources */,
+				E66A0DA918AE6003003FD266 /* ReaderThumbsView.m in Sources */,
+				E66A0DAB18AE6003003FD266 /* ReaderThumbView.m in Sources */,
+				E66A0DAD18AE6003003FD266 /* ReaderViewController.m in Sources */,
+				E66A0DAF18AE6003003FD266 /* ThumbsMainToolbar.m in Sources */,
+				E66A0DB118AE6003003FD266 /* ThumbsViewController.m in Sources */,
+				E66A0DB318AE6003003FD266 /* UIXToolbarView.m in Sources */,
+				E66A0DB518AE6003003FD266 /* AppDelegate.m in Sources */,
+				E66A0DB718AE6003003FD266 /* KPStandViewController.m in Sources */,
+				E66A0DB918AE6003003FD266 /* KPStandViewCell.m in Sources */,
+				E66A0DBB18AE6004003FD266 /* Journal.m in Sources */,
+				E66A0DBD18AE6004003FD266 /* Journal+ImagePreview.m in Sources */,
+				E66A0DBF18AE6004003FD266 /* SYCache.m in Sources */,
+				E66A0D7218AE5EF0003FD266 /* Journal_iOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66A0D7318AE5EF0003FD266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A0D8518AE5EF0003FD266 /* Journal_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66A0DDF18AE6360003FD266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -587,6 +934,11 @@
 			isa = PBXTargetDependency;
 			target = E661505218AA862300D37984 /* Journal */;
 			targetProxy = E661507C18AA862300D37984 /* PBXContainerItemProxy */;
+		};
+		E66A0D7C18AE5EF0003FD266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E66A0D6918AE5EF0003FD266 /* Journal-iOS */;
+			targetProxy = E66A0D7B18AE5EF0003FD266 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -619,6 +971,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				E661508218AA862300D37984 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E66A0D8118AE5EF0003FD266 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E66A0D8218AE5EF0003FD266 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E66A0DE918AE6360003FD266 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E66A0DEA18AE6360003FD266 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -773,6 +1141,115 @@
 			};
 			name = Release;
 		};
+		E66A0D8618AE5EF0003FD266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/Journal_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Journal-iOS/Journal-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E66A0D8718AE5EF0003FD266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/Journal_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Journal-iOS/Journal-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E66A0D8818AE5EF0003FD266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Journal.app/Journal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Journal-iOS/Journal-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Journal-iOSTests/Journal-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E66A0D8918AE5EF0003FD266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Journal.app/Journal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Journal-iOS/Journal-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Journal-iOSTests/Journal-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		E66A0DEE18AE6361003FD266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Journal-iOS-resources/Journal-iOS-resources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Journal-iOS-resources/Journal-iOS-resources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E66A0DEF18AE6361003FD266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Journal-iOS-resources/Journal-iOS-resources-Prefix.pch";
+				INFOPLIST_FILE = "Journal-iOS-resources/Journal-iOS-resources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -802,6 +1279,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E66A0D8A18AE5EF0003FD266 /* Build configuration list for PBXNativeTarget "Journal-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66A0D8618AE5EF0003FD266 /* Debug */,
+				E66A0D8718AE5EF0003FD266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E66A0D8B18AE5EF0003FD266 /* Build configuration list for PBXNativeTarget "Journal-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66A0D8818AE5EF0003FD266 /* Debug */,
+				E66A0D8918AE5EF0003FD266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E66A0DED18AE6361003FD266 /* Build configuration list for PBXNativeTarget "Journal-iOS-resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66A0DEE18AE6361003FD266 /* Debug */,
+				E66A0DEF18AE6361003FD266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

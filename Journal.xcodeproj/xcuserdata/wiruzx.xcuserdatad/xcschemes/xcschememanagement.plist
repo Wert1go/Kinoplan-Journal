@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Journal-iOS-resources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Journal-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Journal.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,21 @@
 			<true/>
 		</dict>
 		<key>E661507618AA862300D37984</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E66A0D6918AE5EF0003FD266</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E66A0D7618AE5EF0003FD266</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E66A0DE218AE6360003FD266</key>
 		<dict>
 			<key>primary</key>
 			<true/>
