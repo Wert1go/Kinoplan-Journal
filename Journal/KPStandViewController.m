@@ -43,6 +43,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.collectionView.backgroundColor = [UIColor grayColor];
+
+    UINavigationBar *navigationBar = self.navigationController.navigationBar;
+    
+    
+    //for iOS 6 and lower, set solid background color of UINavigationBar
+    if ([[UIDevice currentDevice] systemVersion].floatValue < 7.0) {
+
+        UIColor *color = [UIColor lightGrayColor];
+
+        CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+        UIGraphicsBeginImageContext(rect.size);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+
+        CGContextSetFillColorWithColor(context, [color CGColor]);
+        CGContextFillRect(context, rect);
+
+        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+
+        [navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+        navigationBar.shadowImage = [[UIImage alloc] init];
+    } else {
+        navigationBar.barTintColor = [UIColor lightGrayColor];
+    }
+
 
     [self updateJournals];
 }
