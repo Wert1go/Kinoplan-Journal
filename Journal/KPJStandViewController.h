@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KPStandViewController : UICollectionViewController
+@interface KPJStandViewController : UICollectionViewController
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 

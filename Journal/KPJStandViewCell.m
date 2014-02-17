@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Applifto. All rights reserved.
 //
 
-#import "KPStandViewCell.h"
+#import "KPJStandViewCell.h"
 
-@implementation KPStandViewCell
+@implementation KPJStandViewCell
 
 - (id)initWithFrame:(CGRect)frame
 {

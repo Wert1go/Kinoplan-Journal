@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Applifto. All rights reserved.
 //
 
-#import "Journal+ImagePreview.h"
+#import "KPJJournal+ImagePreview.h"
 #import "CGPDFDocument.h"
 
 #import "SYCache.h"
@@ -14,7 +14,7 @@
 static CGFloat const kDefaultWidth  = 600.0;
 static CGFloat const kDefaultHeight = 800.0;
 
-@implementation Journal (ImagePreview)
+@implementation KPJJournal (ImagePreview)
 
 - (UIImage *)previewImage {
     return [self previewImageWithSize:CGSizeMake(kDefaultWidth, kDefaultHeight)];
@@ -22,7 +22,7 @@ static CGFloat const kDefaultHeight = 800.0;
 
 - (UIImage *)previewImageWithSize:(CGSize)imageSize {
 
-    NSString *key = [NSString stringWithFormat:@"%@%d%d", self.filePath, imageSize.width, imageSize.height];
+    NSString *key = [NSString stringWithFormat:@"%@%f%f", self.filePath, imageSize.width, imageSize.height];
 
     SYCache *cache = [SYCache sharedCache];
 

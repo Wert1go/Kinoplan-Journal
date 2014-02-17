@@ -9,13 +9,13 @@
 @import CoreData;
 #import "AppDelegate.h"
 
-#import "KPStandViewController.h"
+#import "KPJStandViewController.h"
 
 #define PRESENTATION_MODE TRUE
 
 #if PRESENTATION_MODE
 
-#import "Journal.h"
+#import "KPJJournal.h"
 
 #endif
 
@@ -26,7 +26,7 @@
 
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
 
-    KPStandViewController *standViewController = (KPStandViewController *)navigationController.topViewController;
+    KPJStandViewController *standViewController = (KPJStandViewController *)navigationController.topViewController;
 
     standViewController.managedObjectContext = self.managedObjectContext;
 
@@ -38,8 +38,8 @@
 
         NSData *firstPDF = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"journal0" withExtension:@"pdf"]];
 
-        Journal *firstJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Journal class])
-                                                              inManagedObjectContext:self.managedObjectContext];
+        KPJJournal *firstJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([KPJJournal class])
+                                                                 inManagedObjectContext:self.managedObjectContext];
 
         firstJournal.title = @"First_journal";
         firstJournal.journalID = @1;
@@ -60,8 +60,8 @@
 
         NSData *secondPDF = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"journal1" withExtension:@"pdf"]];
 
-        Journal *secondJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Journal class])
-                                                               inManagedObjectContext:self.managedObjectContext];
+        KPJJournal *secondJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([KPJJournal class])
+                                                                  inManagedObjectContext:self.managedObjectContext];
 
         secondJournal.title = @"Second_journal";
         secondJournal.journalID = @2;
@@ -121,7 +121,7 @@
 
 - (NSManagedObjectModel *)managedObjectModel {
     if (!_managedObjectModel) {
-        NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Journal" withExtension:@"momd"];
+        NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"KPJJournal" withExtension:@"momd"];
         _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     }
     return _managedObjectModel;
@@ -140,7 +140,7 @@
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     if (!_persistentStoreCoordinator) {
-        NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Journal.sqlite"];
+        NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"KPJJournal.sqlite"];
 
         NSError *error = nil;
         _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

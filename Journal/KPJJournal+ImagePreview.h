@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Applifto. All rights reserved.
 //
 
-#import "Journal.h"
+#import "KPJJournal.h"
 
-@interface Journal (ImagePreview)
+@interface KPJJournal (ImagePreview)
 
 - (UIImage *)previewImage;
 

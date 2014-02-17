@@ -2,18 +2,19 @@
 //  Journal.m
 //  Journal
 //
-//  Created by Виктор Шаманов on 2/11/14.
+//  Created by Виктор Шаманов on 2/17/14.
 //  Copyright (c) 2014 Applifto. All rights reserved.
 //
 
-#import "Journal.h"
+#import "KPJJournal.h"
 
-@implementation Journal
+
+@implementation KPJJournal
 
 @dynamic filePath;
-@dynamic title;
 @dynamic journalID;
-@dynamic sortID;
 @dynamic publicationDate;
+@dynamic sortID;
+@dynamic title;
 
 @end

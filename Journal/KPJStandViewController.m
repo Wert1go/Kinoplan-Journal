@@ -6,28 +6,28 @@
 //  Copyright (c) 2014 Applifto. All rights reserved.
 //
 
-#import "KPStandViewController.h"
+#import "KPJStandViewController.h"
 
-#import "KPStandViewCell.h"
+#import "KPJStandViewCell.h"
 #import "ReaderViewController.h"
 
-#import "Journal.h"
+#import "KPJJournal.h"
 
-#import "Journal+ImagePreview.h"
+#import "KPJJournal+ImagePreview.h"
 
-@interface KPStandViewController () <ReaderViewControllerDelegate, UICollectionViewDelegateFlowLayout>
+@interface KPJStandViewController () <ReaderViewControllerDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) NSArray *journals;
 
 @end
 
-@implementation KPStandViewController
+@implementation KPJStandViewController
 
 #pragma mark - Private methods
 
 - (void)updateJournals
 {
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Journal"];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"KPJJournal"];
     fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"journalID" ascending:YES]];
 
     NSFetchedResultsController *resultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
@@ -84,10 +84,10 @@
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 
     static NSString *const CellIdentifier = @"StandViewCell";
-    KPStandViewCell *cell = (KPStandViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier
-                                                                                         forIndexPath:indexPath];
+    KPJStandViewCell *cell = (KPJStandViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier
+                                                                                           forIndexPath:indexPath];
 
-    Journal *journal = self.journals[indexPath.row];
+    KPJJournal *journal = self.journals[indexPath.row];
 
     cell.imageView.image = journal.previewImage;
 
@@ -97,7 +97,7 @@
 #pragma mark - Collection view delegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    Journal *journal = self.journals[indexPath.row];
+    KPJJournal *journal = self.journals[indexPath.row];
 
     ReaderDocument *document = [ReaderDocument withDocumentFilePath:journal.filePath password:nil];
 

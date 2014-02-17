@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KPStandViewCell : UICollectionViewCell
+@interface KPJStandViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
