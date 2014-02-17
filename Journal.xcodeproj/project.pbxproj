@@ -122,6 +122,9 @@
 		E67B344518B23570005747F9 /* KPJCoreDataManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D10DEC1A689F9EB86FD6EBFE /* KPJCoreDataManager.h */; };
 		E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506818AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard */; };
 		E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506B18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard */; };
+		E67B345518B24579005747F9 /* KPJJournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* KPJJournal.xcdatamodeld */; };
+		E67B345618B2457B005747F9 /* KPJJournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* KPJJournal.xcdatamodeld */; };
+		E67B345718B24593005747F9 /* KPJJournal.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* KPJJournal.xcdatamodeld */; };
 		E6C447BD18AAC877003B5F5E /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479618AAC877003B5F5E /* CGPDFDocument.m */; };
 		E6C447BE18AAC877003B5F5E /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479818AAC877003B5F5E /* ReaderConstants.m */; };
 		E6C447BF18AAC877003B5F5E /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479A18AAC877003B5F5E /* ReaderContentPage.m */; };
@@ -836,6 +839,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67B345718B24593005747F9 /* KPJJournal.xcdatamodeld in Resources */,
 				E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */,
 				E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
 				E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */,
@@ -917,6 +921,7 @@
 				E66A0DB318AE6003003FD266 /* UIXToolbarView.m in Sources */,
 				E66A0DB518AE6003003FD266 /* AppDelegate.m in Sources */,
 				E66A0DB718AE6003003FD266 /* KPJStandViewController.m in Sources */,
+				E67B345618B2457B005747F9 /* KPJJournal.xcdatamodeld in Sources */,
 				E67B344118B22805005747F9 /* KPJJournal.m in Sources */,
 				E66A0DB918AE6003003FD266 /* KPJStandViewCell.m in Sources */,
 				E66A0DBD18AE6004003FD266 /* KPJJournal+ImagePreview.m in Sources */,
@@ -938,6 +943,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67B345518B24579005747F9 /* KPJJournal.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,6 +1172,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
