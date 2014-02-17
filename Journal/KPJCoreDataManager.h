@@ -13,4 +13,6 @@
 
 + (instancetype)sharedManager;
 
+- (void)initExampleObjects;
+
 @end

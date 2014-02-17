@@ -114,14 +114,14 @@
 		E66A0DDC18AE61BF003FD266 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66150A218AAAF8100D37984 /* CoreData.framework */; };
 		E66A0DE518AE6360003FD266 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A0DE418AE6360003FD266 /* CoreFoundation.framework */; };
 		E66A0DEB18AE6360003FD266 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E66A0DE918AE6360003FD266 /* InfoPlist.strings */; };
-		E66A0DF018AE6390003FD266 /* Kinoplan-Journal_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506818AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard */; };
-		E66A0DF118AE6396003FD266 /* Kinoplan-Journal_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506B18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard */; };
 		E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D118AACB81003B5F5E /* journal0.pdf */; };
 		E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D218AACB81003B5F5E /* journal1.pdf */; };
 		E67B344018B22805005747F9 /* KPJJournal.m in Sources */ = {isa = PBXBuildFile; fileRef = E67B343F18B22805005747F9 /* KPJJournal.m */; };
 		E67B344118B22805005747F9 /* KPJJournal.m in Sources */ = {isa = PBXBuildFile; fileRef = E67B343F18B22805005747F9 /* KPJJournal.m */; };
 		E67B344318B22DEB005747F9 /* KPJJournal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E67B343E18B22805005747F9 /* KPJJournal.h */; };
 		E67B344518B23570005747F9 /* KPJCoreDataManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D10DEC1A689F9EB86FD6EBFE /* KPJCoreDataManager.h */; };
+		E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506818AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard */; };
+		E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506B18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard */; };
 		E6C447BD18AAC877003B5F5E /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479618AAC877003B5F5E /* CGPDFDocument.m */; };
 		E6C447BE18AAC877003B5F5E /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479818AAC877003B5F5E /* ReaderConstants.m */; };
 		E6C447BF18AAC877003B5F5E /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479A18AAC877003B5F5E /* ReaderContentPage.m */; };
@@ -836,11 +836,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E66A0DF118AE6396003FD266 /* Kinoplan-Journal_iPad.storyboard in Resources */,
 				E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */,
-				E66A0DEB18AE6360003FD266 /* InfoPlist.strings in Resources */,
-				E66A0DF018AE6390003FD266 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
+				E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
+				E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */,
 				E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */,
+				E66A0DEB18AE6360003FD266 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

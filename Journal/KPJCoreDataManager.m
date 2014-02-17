@@ -5,6 +5,7 @@
 
 #import <CoreData/CoreData.h>
 #import "KPJCoreDataManager.h"
+#import "KPJJournal.h"
 
 @interface KPJCoreDataManager()
 
@@ -15,6 +16,67 @@
 @end
 
 @implementation KPJCoreDataManager
+
+- (void)initExampleObjects {
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    if (![userDefaults boolForKey:@"openedBefore"]) {
+        NSManagedObjectContext *managedObjectContext = self.context;
+
+//        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Journal-iOS-recourse" ofType:@"bundle"];
+
+//        NSBundle *bundle = [[NSBundle alloc] initWithPath:bundlePath];
+
+        NSBundle *bundle = [NSBundle mainBundle];
+
+        NSData *firstPDF = [NSData dataWithContentsOfURL:[bundle URLForResource:@"journal0" withExtension:@"pdf"]];
+
+        KPJJournal *firstJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([KPJJournal class])
+                                                                 inManagedObjectContext:managedObjectContext];
+
+        firstJournal.title = @"First_journal";
+        firstJournal.journalID = @1;
+        firstJournal.sortID = @1;
+        firstJournal.publicationDate = [NSDate date];
+
+        NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentPath = [searchPaths objectAtIndex:0];
+
+        NSString *firstJournalFilePath = [NSString stringWithFormat:@"%@/%@.pdf", documentPath, firstJournal.title];
+        firstJournal.filePath = firstJournalFilePath;
+
+        [[NSFileManager defaultManager] createFileAtPath:firstJournalFilePath
+                                                contents:firstPDF
+                                              attributes:nil];
+
+
+
+        NSData *secondPDF = [NSData dataWithContentsOfURL:[bundle URLForResource:@"journal1" withExtension:@"pdf"]];
+
+        KPJJournal *secondJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([KPJJournal class])
+                                                                  inManagedObjectContext:managedObjectContext];
+
+        secondJournal.title = @"Second_journal";
+        secondJournal.journalID = @2;
+        secondJournal.sortID = @3;
+        secondJournal.publicationDate = [NSDate date];
+
+        NSString *secondJournalFilePath = [NSString stringWithFormat:@"%@/%@.pdf", documentPath, secondJournal.title];
+        secondJournal.filePath = secondJournalFilePath;
+
+        [[NSFileManager defaultManager] createFileAtPath:secondJournalFilePath
+                                                contents:secondPDF
+                                              attributes:nil];
+
+
+        [managedObjectContext save:nil];
+
+        [userDefaults setBool:YES forKey:@"openedBefore"];
+        [userDefaults synchronize];
+
+    }
+}
 
 + (instancetype)sharedManager {
     static id sharedInstance = nil;
