@@ -47,7 +47,8 @@
     self.collectionView.backgroundColor = [UIColor grayColor];
 
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
-    
+
+    self.title = NSLocalizedString(@"JOURNAL_TITLE", nil);
     
     //for iOS 6 and lower, set solid background color of UINavigationBar
     if ([[UIDevice currentDevice] systemVersion].floatValue < 7.0) {
