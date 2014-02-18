@@ -113,7 +113,6 @@
 		E66A0DDB18AE61A9003FD266 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505818AA862300D37984 /* CoreGraphics.framework */; };
 		E66A0DDC18AE61BF003FD266 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66150A218AAAF8100D37984 /* CoreData.framework */; };
 		E66A0DE518AE6360003FD266 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66A0DE418AE6360003FD266 /* CoreFoundation.framework */; };
-		E66A0DEB18AE6360003FD266 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E66A0DE918AE6360003FD266 /* InfoPlist.strings */; };
 		E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D118AACB81003B5F5E /* journal0.pdf */; };
 		E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D218AACB81003B5F5E /* journal1.pdf */; };
 		E67B344018B22805005747F9 /* KPJJournal.m in Sources */ = {isa = PBXBuildFile; fileRef = E67B343F18B22805005747F9 /* KPJJournal.m */; };
@@ -123,8 +122,14 @@
 		E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506818AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard */; };
 		E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506B18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard */; };
 		E67B345518B24579005747F9 /* KPJJournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* KPJJournal.xcdatamodeld */; };
-		E67B345618B2457B005747F9 /* KPJJournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* KPJJournal.xcdatamodeld */; };
-		E67B345718B24593005747F9 /* KPJJournal.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = E661509C18AA9E7600D37984 /* KPJJournal.xcdatamodeld */; };
+		E67B345B18B25177005747F9 /* Journal-iOS-resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E66A0DE318AE6360003FD266 /* Journal-iOS-resources.bundle */; };
+		E67B346118B2531F005747F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E66A0DE918AE6360003FD266 /* InfoPlist.strings */; };
+		E67B346218B25337005747F9 /* Reader-Thumbs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE3EC6933BE2C00B89911 /* Reader-Thumbs@2x.png */; };
+		E67B346318B2533A005747F9 /* Reader-Mark-Y@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE68BFD4E239BFEDA439A /* Reader-Mark-Y@2x.png */; };
+		E67B346418B2533E005747F9 /* Reader-Mark-N@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE9F178BDCE9A6E55DCA1 /* Reader-Mark-N@2x.png */; };
+		E67B346718B25348005747F9 /* Reader-Thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DEF2CFE522023A00D1308 /* Reader-Thumbs.png */; };
+		E67B346818B2534B005747F9 /* Reader-Mark-Y.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE2D386BAE3B4905E80C1 /* Reader-Mark-Y.png */; };
+		E67B346918B2534E005747F9 /* Reader-Mark-N.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE12D6459947153F8DE34 /* Reader-Mark-N.png */; };
 		E6C447BD18AAC877003B5F5E /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479618AAC877003B5F5E /* CGPDFDocument.m */; };
 		E6C447BE18AAC877003B5F5E /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479818AAC877003B5F5E /* ReaderConstants.m */; };
 		E6C447BF18AAC877003B5F5E /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479A18AAC877003B5F5E /* ReaderContentPage.m */; };
@@ -145,8 +150,6 @@
 		E6C447CE18AAC877003B5F5E /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447B818AAC877003B5F5E /* ThumbsMainToolbar.m */; };
 		E6C447CF18AAC877003B5F5E /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447BA18AAC877003B5F5E /* ThumbsViewController.m */; };
 		E6C447D018AAC877003B5F5E /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447BC18AAC877003B5F5E /* UIXToolbarView.m */; };
-		E6C447D318AACB81003B5F5E /* journal0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D118AACB81003B5F5E /* journal0.pdf */; };
-		E6C447D418AACB81003B5F5E /* journal1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E6C447D218AACB81003B5F5E /* journal1.pdf */; };
 		E6C447D918AB59DB003B5F5E /* KPJJournal+ImagePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C447D818AB59DB003B5F5E /* KPJJournal+ImagePreview.m */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +167,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E66A0D6918AE5EF0003FD266;
 			remoteInfo = "Journal-iOS";
+		};
+		E67B345C18B2517F005747F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E661504B18AA862300D37984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E66A0DE218AE6360003FD266;
+			remoteInfo = "Journal-iOS-resources";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -665,6 +675,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E67B345D18B2517F005747F9 /* PBXTargetDependency */,
 			);
 			name = Journal;
 			productName = Journal;
@@ -788,8 +799,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C447D318AACB81003B5F5E /* journal0.pdf in Resources */,
-				E6C447D418AACB81003B5F5E /* journal1.pdf in Resources */,
+				E67B345B18B25177005747F9 /* Journal-iOS-resources.bundle in Resources */,
 				E661506D18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard in Resources */,
 				E661507218AA862300D37984 /* Images.xcassets in Resources */,
 				E661506A18AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
@@ -839,12 +849,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E67B345718B24593005747F9 /* KPJJournal.xcdatamodeld in Resources */,
+				E67B346118B2531F005747F9 /* InfoPlist.strings in Resources */,
 				E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */,
 				E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
 				E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */,
 				E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */,
-				E66A0DEB18AE6360003FD266 /* InfoPlist.strings in Resources */,
+				E67B346318B2533A005747F9 /* Reader-Mark-Y@2x.png in Resources */,
+				E67B346218B25337005747F9 /* Reader-Thumbs@2x.png in Resources */,
+				E67B346918B2534E005747F9 /* Reader-Mark-N.png in Resources */,
+				E67B346818B2534B005747F9 /* Reader-Mark-Y.png in Resources */,
+				E67B346718B25348005747F9 /* Reader-Thumbs.png in Resources */,
+				E67B346418B2533E005747F9 /* Reader-Mark-N@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,7 +936,6 @@
 				E66A0DB318AE6003003FD266 /* UIXToolbarView.m in Sources */,
 				E66A0DB518AE6003003FD266 /* AppDelegate.m in Sources */,
 				E66A0DB718AE6003003FD266 /* KPJStandViewController.m in Sources */,
-				E67B345618B2457B005747F9 /* KPJJournal.xcdatamodeld in Sources */,
 				E67B344118B22805005747F9 /* KPJJournal.m in Sources */,
 				E66A0DB918AE6003003FD266 /* KPJStandViewCell.m in Sources */,
 				E66A0DBD18AE6004003FD266 /* KPJJournal+ImagePreview.m in Sources */,
@@ -959,6 +973,11 @@
 			isa = PBXTargetDependency;
 			target = E66A0D6918AE5EF0003FD266 /* Journal-iOS */;
 			targetProxy = E66A0D7B18AE5EF0003FD266 /* PBXContainerItemProxy */;
+		};
+		E67B345D18B2517F005747F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E66A0DE218AE6360003FD266 /* Journal-iOS-resources */;
+			targetProxy = E67B345C18B2517F005747F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1237,7 +1256,8 @@
 		E66A0DEE18AE6361003FD266 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				COMPRESS_PNG_FILES = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Journal-iOS-resources/Journal-iOS-resources-Prefix.pch";
@@ -1257,7 +1277,8 @@
 		E66A0DEF18AE6361003FD266 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				COMPRESS_PNG_FILES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

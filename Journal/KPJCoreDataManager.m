@@ -24,11 +24,7 @@
     if (![userDefaults boolForKey:@"openedBefore"]) {
         NSManagedObjectContext *managedObjectContext = self.context;
 
-//        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Journal-iOS-recourse" ofType:@"bundle"];
-
-//        NSBundle *bundle = [[NSBundle alloc] initWithPath:bundlePath];
-
-        NSBundle *bundle = [NSBundle mainBundle];
+        NSBundle *bundle = self.bundle;
 
         NSData *firstPDF = [NSData dataWithContentsOfURL:[bundle URLForResource:@"journal0" withExtension:@"pdf"]];
 
@@ -89,7 +85,7 @@
 
 - (NSManagedObjectModel *)managedObjectModel {
     if (!_managedObjectModel) {
-        NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"KPJJournal" withExtension:@"momd"];
+        NSURL *modelURL = [self.bundle URLForResource:@"KPJJournal" withExtension:@"momd"];
         _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     }
     return _managedObjectModel;
@@ -106,6 +102,9 @@
     return _context;
 }
 
+- (NSBundle *)bundle {
+    return [[NSBundle alloc] initWithPath:[[NSBundle mainBundle] pathForResource:@"Journal-iOS-resources" ofType:@"bundle"]];
+}
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     if (!_persistentStoreCoordinator) {
