@@ -96,7 +96,9 @@
 
     [cell.imageView setImageWithURL:[NSURL fileURLWithPath:previewPath]
                    placeholderImage:nil
-                            options:SDWebImageLowPriority];
+                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                              [cell layoutSubviews];
+                          }];
 
     return cell;
 }

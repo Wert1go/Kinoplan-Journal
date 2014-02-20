@@ -10,6 +10,6 @@
 
 @interface KPJStandViewCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView; ///< After setting UIImage you must call layoutSubviews for cell
 
 @end
