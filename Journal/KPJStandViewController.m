@@ -13,7 +13,9 @@
 
 #import "KPJJournal.h"
 
-#import "KPJJournal+ImagePreview.h"
+#import "KPJPreviewLoader.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface KPJStandViewController () <ReaderViewControllerDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -90,7 +92,11 @@
 
     KPJJournal *journal = self.journals[indexPath.row];
 
-    cell.imageView.image = journal.previewImage;
+    NSString *previewPath = [KPJPreviewLoader previewPathForDocumentAtPath:journal.filePath];
+
+    [cell.imageView setImageWithURL:[NSURL fileURLWithPath:previewPath]
+                   placeholderImage:nil
+                            options:SDWebImageLowPriority];
 
     return cell;
 }

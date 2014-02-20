@@ -6,6 +6,7 @@
 #import <CoreData/CoreData.h>
 #import "KPJCoreDataManager.h"
 #import "KPJJournal.h"
+#import "KPJPreviewLoader.h"
 
 @interface KPJCoreDataManager()
 
@@ -22,9 +23,12 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
     if (![userDefaults boolForKey:@"openedBefore"]) {
+
         NSManagedObjectContext *managedObjectContext = self.context;
 
         NSBundle *bundle = self.bundle;
+
+        NSFileManager *fileManager = [NSFileManager defaultManager];
 
         NSData *firstPDF = [NSData dataWithContentsOfURL:[bundle URLForResource:@"journal0" withExtension:@"pdf"]];
 
@@ -42,10 +46,11 @@
         NSString *firstJournalFilePath = [NSString stringWithFormat:@"%@/%@.pdf", documentPath, firstJournal.title];
         firstJournal.filePath = firstJournalFilePath;
 
-        [[NSFileManager defaultManager] createFileAtPath:firstJournalFilePath
-                                                contents:firstPDF
-                                              attributes:nil];
+        [fileManager createFileAtPath:firstJournalFilePath
+                             contents:firstPDF
+                           attributes:nil];
 
+        [KPJPreviewLoader generatePreviewForDocumentAtPath:firstJournal.filePath];
 
 
         NSData *secondPDF = [NSData dataWithContentsOfURL:[bundle URLForResource:@"journal1" withExtension:@"pdf"]];
@@ -61,16 +66,16 @@
         NSString *secondJournalFilePath = [NSString stringWithFormat:@"%@/%@.pdf", documentPath, secondJournal.title];
         secondJournal.filePath = secondJournalFilePath;
 
-        [[NSFileManager defaultManager] createFileAtPath:secondJournalFilePath
-                                                contents:secondPDF
-                                              attributes:nil];
+        [fileManager createFileAtPath:secondJournalFilePath
+                             contents:secondPDF
+                           attributes:nil];
 
+        [KPJPreviewLoader generatePreviewForDocumentAtPath:secondJournal.filePath];
 
         [managedObjectContext save:nil];
 
         [userDefaults setBool:YES forKey:@"openedBefore"];
         [userDefaults synchronize];
-
     }
 }
 
@@ -86,6 +91,7 @@
 - (NSManagedObjectModel *)managedObjectModel {
     if (!_managedObjectModel) {
         NSURL *modelURL = [self.bundle URLForResource:@"KPJJournal" withExtension:@"momd"];
+
         _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     }
     return _managedObjectModel;
