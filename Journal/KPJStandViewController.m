@@ -16,6 +16,7 @@
 #import "KPJPreviewLoader.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "UIColor+DarkReader.h"
 
 @interface KPJStandViewController () <ReaderViewControllerDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -46,8 +47,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.collectionView.backgroundColor = [UIColor grayColor];
-
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
 
     self.title = NSLocalizedString(@"JOURNAL_TITLE", nil);
@@ -62,9 +61,11 @@
     self.collectionView.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
 
     //for iOS 6 and lower, set solid background color of UINavigationBar
+    UIColor *navBarColor = [UIColor readerDarkGrayColor];
+
     if ([[UIDevice currentDevice] systemVersion].floatValue < 7.0) {
 
-        UIColor *color = [UIColor lightGrayColor];
+        UIColor *color = navBarColor;
 
         CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
         UIGraphicsBeginImageContext(rect.size);
@@ -79,7 +80,7 @@
         [navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
         navigationBar.shadowImage = [[UIImage alloc] init];
     } else {
-        navigationBar.barTintColor = [UIColor lightGrayColor];
+        navigationBar.barTintColor = navBarColor;
     }
 
 
