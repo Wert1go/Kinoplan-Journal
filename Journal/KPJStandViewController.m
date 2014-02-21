@@ -45,13 +45,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.collectionView.backgroundColor = [UIColor grayColor];
 
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
 
     self.title = NSLocalizedString(@"JOURNAL_TITLE", nil);
-    
+
+    UIImage *backgroundImage;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        backgroundImage = [UIImage imageNamed:@"Journal-iOS-resources.bundle/shelf_backgroud_ipad"];
+    } else {
+        backgroundImage = [UIImage imageNamed:@"Journal-iOS-resources.bundle/shelf_backgroud_iphone"];
+    }
+
+    self.collectionView.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
+
     //for iOS 6 and lower, set solid background color of UINavigationBar
     if ([[UIDevice currentDevice] systemVersion].floatValue < 7.0) {
 
@@ -119,10 +128,47 @@
 
 #pragma mark - Collection view flow layout delegate
 
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                         layout:(UICollectionViewLayout *)collectionViewLayout
+referenceSizeForHeaderInSection:(NSInteger)section {
+    return CGSizeMake(0.0, 26.0);
+}
+
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                             layout:(UICollectionViewLayout*)collectionViewLayout
+minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    return 27.0;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return CGSizeMake(130.0, 170.0);
+    } else {
+        return CGSizeMake(130.0, 170.0);
+    }
+}
+
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout *)collectionViewLayout
         insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return UIEdgeInsetsMake(0.0, 40.0, 0.0, 40.0);
+    } else {
+        return UIEdgeInsetsMake(0.0, 20.0, 0.0, 20.0);
+    }
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                                  layout:(UICollectionViewLayout*)collectionViewLayout
+minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return 50.0;
+    } else {
+        return 10.0;
+    }
 }
 
 #pragma mark - ReaderViewControllerDelegate

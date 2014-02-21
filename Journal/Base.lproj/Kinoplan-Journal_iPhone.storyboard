@@ -23,31 +23,31 @@
         <scene sceneID="lZN-wH-g4N">
             <objects>
                 <collectionViewController storyboardIdentifier="KPJStandViewController" autoresizesArchivedViewToFullSize="NO" id="YpI-hy-LZ2" customClass="KPJStandViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="9ge-tn-DEs">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="9ge-tn-DEs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J1Q-hx-D7i">
-                            <size key="itemSize" width="145" height="226"/>
+                            <size key="itemSize" width="129" height="170"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StandViewCell" id="cq1-0i-eB2" customClass="KPJStandViewCell">
-                                <rect key="frame" x="0.0" y="64" width="145" height="226"/>
+                                <rect key="frame" x="0.0" y="64" width="130" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="145" height="226"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ypd-z7-PBX">
-                                            <rect key="frame" x="0.0" y="0.0" width="145" height="226"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="170"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <size key="customSize" width="145" height="226"/>
+                                <size key="customSize" width="130" height="170"/>
                                 <connections>
                                     <outlet property="imageView" destination="Ypd-z7-PBX" id="gsG-9C-t46"/>
                                 </connections>

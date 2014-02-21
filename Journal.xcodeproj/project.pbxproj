@@ -33,6 +33,12 @@
 		D10DEE124E23ED379749C569 /* Reader-Thumbs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE3EC6933BE2C00B89911 /* Reader-Thumbs@2x.png */; };
 		D10DEE5B4DF6CDBFDEF592FC /* KPJCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D10DEC7D1FAFF90056389BCF /* KPJCoreDataManager.m */; };
 		D10DEEE53B3037CB09031E37 /* AppIcon-057.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE9E5DA723A794560C012 /* AppIcon-057.png */; };
+		E64A0E5F18B75CC500B4DB25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E661507118AA862300D37984 /* Images.xcassets */; };
+		E64A0E6018B75CC600B4DB25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E661507118AA862300D37984 /* Images.xcassets */; };
+		E64A0E6518B768E500B4DB25 /* shelf_backgroud_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E64A0E6218B768E500B4DB25 /* shelf_backgroud_ipad@2x.png */; };
+		E64A0E6718B768E500B4DB25 /* shelf_backgroud_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E64A0E6318B768E500B4DB25 /* shelf_backgroud_ipad.png */; };
+		E64A0E6A18B76AC500B4DB25 /* shelf_backgroud_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E64A0E6818B76AC500B4DB25 /* shelf_backgroud_iphone.png */; };
+		E64A0E6B18B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E64A0E6918B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png */; };
 		E661505718AA862300D37984 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505618AA862300D37984 /* Foundation.framework */; };
 		E661505918AA862300D37984 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505818AA862300D37984 /* CoreGraphics.framework */; };
 		E661505B18AA862300D37984 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505A18AA862300D37984 /* UIKit.framework */; };
@@ -41,7 +47,6 @@
 		E661506718AA862300D37984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E661506618AA862300D37984 /* AppDelegate.m */; };
 		E661506A18AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506818AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard */; };
 		E661506D18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E661506B18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard */; };
-		E661507218AA862300D37984 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E661507118AA862300D37984 /* Images.xcassets */; };
 		E661507918AA862300D37984 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661507818AA862300D37984 /* XCTest.framework */; };
 		E661507A18AA862300D37984 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505618AA862300D37984 /* Foundation.framework */; };
 		E661507B18AA862300D37984 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505A18AA862300D37984 /* UIKit.framework */; };
@@ -124,8 +129,8 @@
 		E67B346718B25348005747F9 /* Reader-Thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DEF2CFE522023A00D1308 /* Reader-Thumbs.png */; };
 		E67B346818B2534B005747F9 /* Reader-Mark-Y.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE2D386BAE3B4905E80C1 /* Reader-Mark-Y.png */; };
 		E67B346918B2534E005747F9 /* Reader-Mark-N.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE12D6459947153F8DE34 /* Reader-Mark-N.png */; };
-		E6BDF16818B61EF80054F27F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BDF16718B61EF80054F27F /* SDWebImage.framework */; };
-		E6BDF16918B61EF80054F27F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BDF16718B61EF80054F27F /* SDWebImage.framework */; };
+		E6BDF18418B74FEE0054F27F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BDF18318B74FEE0054F27F /* SDWebImage.framework */; };
+		E6BDF18518B74FEE0054F27F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BDF18318B74FEE0054F27F /* SDWebImage.framework */; };
 		E6C447BD18AAC877003B5F5E /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479618AAC877003B5F5E /* CGPDFDocument.m */; };
 		E6C447BE18AAC877003B5F5E /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479818AAC877003B5F5E /* ReaderConstants.m */; };
 		E6C447BF18AAC877003B5F5E /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C4479A18AAC877003B5F5E /* ReaderContentPage.m */; };
@@ -238,6 +243,10 @@
 		D10DEEEB853FEF7D24EEA7FC /* Reader-Print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Print.png"; sourceTree = "<group>"; };
 		D10DEF2CFE522023A00D1308 /* Reader-Thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Thumbs.png"; sourceTree = "<group>"; };
 		D10DEFA43540E6B0464C5150 /* AppIcon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-144.png"; sourceTree = "<group>"; };
+		E64A0E6218B768E500B4DB25 /* shelf_backgroud_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shelf_backgroud_ipad@2x.png"; sourceTree = "<group>"; };
+		E64A0E6318B768E500B4DB25 /* shelf_backgroud_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf_backgroud_ipad.png; sourceTree = "<group>"; };
+		E64A0E6818B76AC500B4DB25 /* shelf_backgroud_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf_backgroud_iphone.png; sourceTree = "<group>"; };
+		E64A0E6918B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shelf_backgroud_iphone@2x.png"; sourceTree = "<group>"; };
 		E661505318AA862300D37984 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E661505618AA862300D37984 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E661505818AA862300D37984 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -275,7 +284,7 @@
 		E66A0DE818AE6360003FD266 /* Journal-iOS-resources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Journal-iOS-resources-Info.plist"; sourceTree = "<group>"; };
 		E66A0DEA18AE6360003FD266 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E66A0DEC18AE6360003FD266 /* Journal-iOS-resources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Journal-iOS-resources-Prefix.pch"; sourceTree = "<group>"; };
-		E6BDF16718B61EF80054F27F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = External/SDWebImage.framework; sourceTree = "<group>"; };
+		E6BDF18318B74FEE0054F27F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = External/SDWebImage.framework; sourceTree = "<group>"; };
 		E6C4479518AAC877003B5F5E /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPDFDocument.h; sourceTree = "<group>"; };
 		E6C4479618AAC877003B5F5E /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPDFDocument.m; sourceTree = "<group>"; };
 		E6C4479718AAC877003B5F5E /* ReaderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderConstants.h; sourceTree = "<group>"; };
@@ -327,7 +336,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6BDF16818B61EF80054F27F /* SDWebImage.framework in Frameworks */,
+				E6BDF18418B74FEE0054F27F /* SDWebImage.framework in Frameworks */,
 				E66150A318AAAF8100D37984 /* CoreData.framework in Frameworks */,
 				E661505918AA862300D37984 /* CoreGraphics.framework in Frameworks */,
 				E661505B18AA862300D37984 /* UIKit.framework in Frameworks */,
@@ -349,7 +358,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6BDF16918B61EF80054F27F /* SDWebImage.framework in Frameworks */,
+				E6BDF18518B74FEE0054F27F /* SDWebImage.framework in Frameworks */,
 				E66A0DDC18AE61BF003FD266 /* CoreData.framework in Frameworks */,
 				E66A0DDB18AE61A9003FD266 /* CoreGraphics.framework in Frameworks */,
 				E66A0DDA18AE6165003FD266 /* UIKit.framework in Frameworks */,
@@ -409,6 +418,17 @@
 			path = Reader/Graphics;
 			sourceTree = SOURCE_ROOT;
 		};
+		E64A0E6118B768D100B4DB25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E64A0E6218B768E500B4DB25 /* shelf_backgroud_ipad@2x.png */,
+				E64A0E6318B768E500B4DB25 /* shelf_backgroud_ipad.png */,
+				E64A0E6818B76AC500B4DB25 /* shelf_backgroud_iphone.png */,
+				E64A0E6918B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E661504A18AA862300D37984 = {
 			isa = PBXGroup;
 			children = (
@@ -438,7 +458,7 @@
 		E661505518AA862300D37984 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E6BDF16718B61EF80054F27F /* SDWebImage.framework */,
+				E6BDF18318B74FEE0054F27F /* SDWebImage.framework */,
 				E66150A218AAAF8100D37984 /* CoreData.framework */,
 				E661505618AA862300D37984 /* Foundation.framework */,
 				E661505818AA862300D37984 /* CoreGraphics.framework */,
@@ -462,6 +482,7 @@
 				E661506B18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard */,
 				E661507118AA862300D37984 /* Images.xcassets */,
 				E661509C18AA9E7600D37984 /* KPJJournal.xcdatamodeld */,
+				E64A0E6118B768D100B4DB25 /* Resources */,
 				E661505D18AA862300D37984 /* Supporting Files */,
 			);
 			path = Journal;
@@ -779,7 +800,6 @@
 			files = (
 				E67B345B18B25177005747F9 /* Journal-iOS-resources.bundle in Resources */,
 				E661506D18AA862300D37984 /* Kinoplan-Journal_iPad.storyboard in Resources */,
-				E661507218AA862300D37984 /* Images.xcassets in Resources */,
 				E661506A18AA862300D37984 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
 				E661506118AA862300D37984 /* InfoPlist.strings in Resources */,
 				D10DEEE53B3037CB09031E37 /* AppIcon-057.png in Resources */,
@@ -787,6 +807,7 @@
 				D10DEE04DCAF57E475C2BE1B /* AppIcon-076.png in Resources */,
 				D10DE5261BD1E374E2936C82 /* AppIcon-114.png in Resources */,
 				D10DE4760D6B8ED65D5703C5 /* AppIcon-120.png in Resources */,
+				E64A0E6018B75CC600B4DB25 /* Images.xcassets in Resources */,
 				D10DE5B1C0C7DD8E401CB10E /* AppIcon-144.png in Resources */,
 				D10DE0D680C93F50B5996ACB /* AppIcon-152.png in Resources */,
 				D10DEC425FDBAAA119648D4F /* Reader-Email.png in Resources */,
@@ -827,8 +848,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64A0E6A18B76AC500B4DB25 /* shelf_backgroud_iphone.png in Resources */,
 				E67B346118B2531F005747F9 /* InfoPlist.strings in Resources */,
+				E64A0E6518B768E500B4DB25 /* shelf_backgroud_ipad@2x.png in Resources */,
 				E66A0DF318AE63C0003FD266 /* journal1.pdf in Resources */,
+				E64A0E6718B768E500B4DB25 /* shelf_backgroud_ipad.png in Resources */,
 				E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
 				E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */,
 				E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */,
@@ -836,8 +860,10 @@
 				E67B346218B25337005747F9 /* Reader-Thumbs@2x.png in Resources */,
 				E67B346918B2534E005747F9 /* Reader-Mark-N.png in Resources */,
 				E67B346818B2534B005747F9 /* Reader-Mark-Y.png in Resources */,
+				E64A0E5F18B75CC500B4DB25 /* Images.xcassets in Resources */,
 				E67B346718B25348005747F9 /* Reader-Thumbs.png in Resources */,
 				E67B346418B2533E005747F9 /* Reader-Mark-N@2x.png in Resources */,
+				E64A0E6B18B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,18 +1112,21 @@
 		E661508918AA862300D37984 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal",
+					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal/",
+					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal/External/",
 					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal/External",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Journal/Journal-Prefix.pch";
 				INFOPLIST_FILE = "Journal/Journal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2AE7C9A1-39C7-4C65-9B71-60CDE12086CA";
 				WRAPPER_EXTENSION = app;
@@ -1107,18 +1136,21 @@
 		E661508A18AA862300D37984 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal",
+					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal/",
+					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal/External/",
 					"/Users/wiruzx/Developer/objc-workspace/Kinoplan-iOS/Submodules/Kinoplan-Journal/External",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Journal/Journal-Prefix.pch";
 				INFOPLIST_FILE = "Journal/Journal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
