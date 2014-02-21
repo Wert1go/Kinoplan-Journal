@@ -120,7 +120,7 @@
 
     ReaderDocument *document = [ReaderDocument withDocumentFilePath:journal.filePath password:nil];
 
-    ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document];
+    ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document title:journal.title];
     readerViewController.delegate = self;
 
     [self presentViewController:readerViewController animated:YES completion:nil];

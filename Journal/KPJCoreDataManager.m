@@ -35,7 +35,7 @@
         KPJJournal *firstJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([KPJJournal class])
                                                                  inManagedObjectContext:managedObjectContext];
 
-        firstJournal.title = @"First_journal";
+        firstJournal.title = @"Выпуск #01 (517)";
         firstJournal.journalID = @1;
         firstJournal.sortID = @1;
         firstJournal.publicationDate = [NSDate date];
@@ -58,7 +58,7 @@
         KPJJournal *secondJournal = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([KPJJournal class])
                                                                   inManagedObjectContext:managedObjectContext];
 
-        secondJournal.title = @"Second_journal";
+        secondJournal.title = @"Выпуск #27 (491)";
         secondJournal.journalID = @2;
         secondJournal.sortID = @3;
         secondJournal.publicationDate = [NSDate date];
