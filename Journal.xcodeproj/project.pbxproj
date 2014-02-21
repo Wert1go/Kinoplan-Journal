@@ -39,6 +39,10 @@
 		E64A0E6718B768E500B4DB25 /* shelf_backgroud_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = E64A0E6318B768E500B4DB25 /* shelf_backgroud_ipad.png */; };
 		E64A0E6A18B76AC500B4DB25 /* shelf_backgroud_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E64A0E6818B76AC500B4DB25 /* shelf_backgroud_iphone.png */; };
 		E64A0E6B18B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E64A0E6918B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png */; };
+		E64A0E6E18B76D9400B4DB25 /* UIImage+Colored.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A0E6D18B76D9400B4DB25 /* UIImage+Colored.m */; };
+		E64A0E6F18B76D9400B4DB25 /* UIImage+Colored.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A0E6D18B76D9400B4DB25 /* UIImage+Colored.m */; };
+		E64A0E7218B772F200B4DB25 /* UIColor+DarkReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A0E7118B772F200B4DB25 /* UIColor+DarkReader.m */; };
+		E64A0E7318B772F200B4DB25 /* UIColor+DarkReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E64A0E7118B772F200B4DB25 /* UIColor+DarkReader.m */; };
 		E661505718AA862300D37984 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505618AA862300D37984 /* Foundation.framework */; };
 		E661505918AA862300D37984 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505818AA862300D37984 /* CoreGraphics.framework */; };
 		E661505B18AA862300D37984 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E661505A18AA862300D37984 /* UIKit.framework */; };
@@ -247,6 +251,10 @@
 		E64A0E6318B768E500B4DB25 /* shelf_backgroud_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf_backgroud_ipad.png; sourceTree = "<group>"; };
 		E64A0E6818B76AC500B4DB25 /* shelf_backgroud_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf_backgroud_iphone.png; sourceTree = "<group>"; };
 		E64A0E6918B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shelf_backgroud_iphone@2x.png"; sourceTree = "<group>"; };
+		E64A0E6C18B76D9400B4DB25 /* UIImage+Colored.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Colored.h"; sourceTree = "<group>"; };
+		E64A0E6D18B76D9400B4DB25 /* UIImage+Colored.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Colored.m"; sourceTree = "<group>"; };
+		E64A0E7018B772F200B4DB25 /* UIColor+DarkReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DarkReader.h"; sourceTree = "<group>"; };
+		E64A0E7118B772F200B4DB25 /* UIColor+DarkReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DarkReader.m"; sourceTree = "<group>"; };
 		E661505318AA862300D37984 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E661505618AA862300D37984 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E661505818AA862300D37984 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -655,6 +663,10 @@
 				E6C447BB18AAC877003B5F5E /* UIXToolbarView.h */,
 				E6C447BC18AAC877003B5F5E /* UIXToolbarView.m */,
 				D10DEF24AE0D0F0BAD5A414A /* Graphics */,
+				E64A0E6C18B76D9400B4DB25 /* UIImage+Colored.h */,
+				E64A0E6D18B76D9400B4DB25 /* UIImage+Colored.m */,
+				E64A0E7018B772F200B4DB25 /* UIColor+DarkReader.h */,
+				E64A0E7118B772F200B4DB25 /* UIColor+DarkReader.m */,
 			);
 			name = Reader;
 			path = Reader/Sources;
@@ -890,7 +902,9 @@
 				E6C447C818AAC877003B5F5E /* ReaderThumbQueue.m in Sources */,
 				E6C447BE18AAC877003B5F5E /* ReaderConstants.m in Sources */,
 				E6C447CA18AAC877003B5F5E /* ReaderThumbRequest.m in Sources */,
+				E64A0E6E18B76D9400B4DB25 /* UIImage+Colored.m in Sources */,
 				E6C447C718AAC877003B5F5E /* ReaderThumbFetch.m in Sources */,
+				E64A0E7218B772F200B4DB25 /* UIColor+DarkReader.m in Sources */,
 				E6C447CD18AAC877003B5F5E /* ReaderViewController.m in Sources */,
 				E6C447C318AAC877003B5F5E /* ReaderDocumentOutline.m in Sources */,
 				E661506718AA862300D37984 /* AppDelegate.m in Sources */,
@@ -921,6 +935,7 @@
 				E66A0D8F18AE6003003FD266 /* ReaderConstants.m in Sources */,
 				E66A0D9118AE6003003FD266 /* ReaderContentPage.m in Sources */,
 				E66A0D9318AE6003003FD266 /* ReaderContentTile.m in Sources */,
+				E64A0E7318B772F200B4DB25 /* UIColor+DarkReader.m in Sources */,
 				E66A0D9518AE6003003FD266 /* ReaderContentView.m in Sources */,
 				E66A0D9718AE6003003FD266 /* ReaderDocument.m in Sources */,
 				E66A0D9918AE6003003FD266 /* ReaderDocumentOutline.m in Sources */,
@@ -933,6 +948,7 @@
 				E66A0DA718AE6003003FD266 /* ReaderThumbRequest.m in Sources */,
 				E66A0DA918AE6003003FD266 /* ReaderThumbsView.m in Sources */,
 				E66A0DAB18AE6003003FD266 /* ReaderThumbView.m in Sources */,
+				E64A0E6F18B76D9400B4DB25 /* UIImage+Colored.m in Sources */,
 				E66A0DAD18AE6003003FD266 /* ReaderViewController.m in Sources */,
 				E66A0DAF18AE6003003FD266 /* ThumbsMainToolbar.m in Sources */,
 				E66A0DB118AE6003003FD266 /* ThumbsViewController.m in Sources */,
