@@ -83,7 +83,7 @@
     
     } else {
         navigationBar.barTintColor = navBarColor;
-        self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeTextColor:[UIColor readerBlueColor]};
+        self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeTextColor:[UIColor whiteColor]};
     }
 
 
