@@ -50,6 +50,7 @@
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
 
     self.title = NSLocalizedString(@"JOURNAL_TITLE", nil);
+    
 
     UIImage *backgroundImage;
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -79,8 +80,10 @@
 
         [navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
         navigationBar.shadowImage = [[UIImage alloc] init];
+    
     } else {
         navigationBar.barTintColor = navBarColor;
+        self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeTextColor:[UIColor readerBlueColor]};
     }
 
 
