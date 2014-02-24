@@ -1,4 +1,4 @@
-//
+
 //  KPStandViewController.m
 //  Journal
 //
@@ -107,11 +107,12 @@
 
     NSString *previewPath = [KPJPreviewLoader previewPathForDocumentAtPath:journal.filePath];
 
+    UIImage *placeholderImage = [UIImage imageNamed:@"Journal-iOS-resources.bundle/journal_placeholder"];
+
     [cell.imageView setImageWithURL:[NSURL fileURLWithPath:previewPath]
-                   placeholderImage:nil
+                   placeholderImage:placeholderImage
                           completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
                               [cell layoutSubviews];
-                          }];
 
     return cell;
 }

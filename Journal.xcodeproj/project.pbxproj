@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C500EF9018BB9E5F0042DD93 /* journal_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C500EF8E18BB9E5F0042DD93 /* journal_placeholder.png */; };
+		C500EF9118BB9E5F0042DD93 /* journal_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C500EF8F18BB9E5F0042DD93 /* journal_placeholder@2x.png */; };
 		C59E45AE18BB7FBE00B8FA34 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59E45AD18BB7FBE00B8FA34 /* SDWebImage.framework */; };
 		C59E45AF18BB7FBE00B8FA34 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59E45AD18BB7FBE00B8FA34 /* SDWebImage.framework */; };
 		D10DE08B036F9EE28AF735E6 /* Reader-Button-H@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D10DE55D3169E95D48CC0124 /* Reader-Button-H@2x.png */; };
@@ -221,6 +223,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C500EF8E18BB9E5F0042DD93 /* journal_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = journal_placeholder.png; sourceTree = "<group>"; };
+		C500EF8F18BB9E5F0042DD93 /* journal_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "journal_placeholder@2x.png"; sourceTree = "<group>"; };
 		C59E45AD18BB7FBE00B8FA34 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = External/SDWebImage.framework; sourceTree = "<group>"; };
 		C5DF133218BB7442006FCC0E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D10DE12D6459947153F8DE34 /* Reader-Mark-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-N.png"; sourceTree = "<group>"; };
@@ -434,6 +438,8 @@
 				E64A0E6318B768E500B4DB25 /* shelf_backgroud_ipad.png */,
 				E64A0E6818B76AC500B4DB25 /* shelf_backgroud_iphone.png */,
 				E64A0E6918B76AC500B4DB25 /* shelf_backgroud_iphone@2x.png */,
+				C500EF8E18BB9E5F0042DD93 /* journal_placeholder.png */,
+				C500EF8F18BB9E5F0042DD93 /* journal_placeholder@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -869,8 +875,10 @@
 				E64A0E6718B768E500B4DB25 /* shelf_backgroud_ipad.png in Resources */,
 				E67B344618B23ABA005747F9 /* Kinoplan-Journal_iPhone.storyboard in Resources */,
 				E67B344718B23ABD005747F9 /* Kinoplan-Journal_iPad.storyboard in Resources */,
+				C500EF9018BB9E5F0042DD93 /* journal_placeholder.png in Resources */,
 				E66A0DF218AE63BC003FD266 /* journal0.pdf in Resources */,
 				E67B346318B2533A005747F9 /* Reader-Mark-Y@2x.png in Resources */,
+				C500EF9118BB9E5F0042DD93 /* journal_placeholder@2x.png in Resources */,
 				E67B346218B25337005747F9 /* Reader-Thumbs@2x.png in Resources */,
 				E67B346918B2534E005747F9 /* Reader-Mark-N.png in Resources */,
 				E67B346818B2534B005747F9 /* Reader-Mark-Y.png in Resources */,
