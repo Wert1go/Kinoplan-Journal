@@ -113,6 +113,7 @@
                    placeholderImage:placeholderImage
                           completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
                               [cell layoutSubviews];
+                          }];
 
     return cell;
 }
